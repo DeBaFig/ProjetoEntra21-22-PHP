@@ -99,7 +99,7 @@ O [Nome do Projeto]() foi idealizado para ter uma opção ainda mais ampla quand
 <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/13577500?v=4" width="100px;" alt=""/>
 [![Linkedin Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/)
 [![Gmail Badge](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:@gmail.com)
-[![Whatsapp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://whatsa.me/)  
+[![Whatsapp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://whatsa.me/5547997723931)  
 
 [**Jennifer**](https://github.com/jennibarbosa)  
 <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/98884593?v=4" width="100px;" alt=""/>
@@ -115,9 +115,9 @@ O [Nome do Projeto]() foi idealizado para ter uma opção ainda mais ampla quand
 
 [**Paula**](https://github.com/PaulaKinder)  
 <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/103958106?v=4" width="100px;" alt=""/>
-[![Linkedin Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/)
-[![Gmail Badge](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:@gmail.com)
-[![Whatsapp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://whatsa.me/)  
+[![Linkedin Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/paula-eduarda-silva)
+[![Gmail Badge](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:paula.eduarda@unoesc.edu.br)
+[![Whatsapp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://whatsa.me/5549991323230)  
 
 [**Vinicius**](https://github.com/Vinivinix)  
 <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/104091199?v=4" width="100px;" alt=""/>
