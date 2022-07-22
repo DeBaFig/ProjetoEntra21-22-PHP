@@ -1,8 +1,8 @@
 <p align="center">
 <a target="_blank" href="https://www.entra21.com.br/aprovados"><img style="border-radius: 50%;" src="https://cdn.sonicadigital.com.br/entra21/storage/header/257/original-61f8610472d4f.png" /></a>
-</p>
+<a target="_blank" href=""><img style="border-radius: 50%;" src="https://user-images.githubusercontent.com/46844031/180487135-baecf00d-ece5-4282-a5f3-6a1c4089cc02.gif" /></a>
 <hr>
-
+</p>
 
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)  ![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)![CSS](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white)  ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![JS](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)  ![MySQL](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)![Markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)![VisualStudio Code](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
 
