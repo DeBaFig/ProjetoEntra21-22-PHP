@@ -1,4 +1,4 @@
-![Banner](../../assest/img/milestones.jpg)
+![Banner](../../assets/img/milestones.jpg)
 
 # Milestones
 

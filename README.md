@@ -1,6 +1,6 @@
 <p align="center">
 <a target="_blank" href="https://www.entra21.com.br/aprovados"><img style="border-radius: 50%;" src="https://cdn.sonicadigital.com.br/entra21/storage/header/257/original-61f8610472d4f.png" /></a>
-<a target="_blank" href=""><img style="border-radius: 50%;" src="/assest/img/banner-readme.gif" /></a>
+<a target="_blank" href=""><img style="border-radius: 50%;" src="assets/img/banner-readme.gif" /></a>
 <hr>
 </p>
 
@@ -38,7 +38,7 @@ O projeto tem como objetivo concretizar os conhecimentos adquiridos durante o cu
 
 ## Sobre
 
-O [Nome do Projeto]() foi idealizado para ter uma opção ainda mais ampla quando falamos de venda/troca de mercadorias, hoje no mercado temos muitas opções de sites de intermédio, de compra e venda mas decidimos ir um pouco contra a maré, decidimos dar poder para o comprador informar sua necessidade, e o vendedor da mercadoria correr atrás do comprador!
+O [Balcão Brasil]() foi idealizado para ter uma opção ainda mais ampla quando falamos de venda/troca de mercadorias, hoje no mercado temos muitas opções de sites de intermédio, de compra e venda mas decidimos ir um pouco contra a maré, decidimos dar poder para o comprador informar sua necessidade, e o vendedor da mercadoria correr atrás do comprador!
 
 ## Checklist de funções
 

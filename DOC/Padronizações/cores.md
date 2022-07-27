@@ -1,4 +1,4 @@
-![img](../../assest/img/Cores.jpg)
+![img](../../assets/img/Cores.jpg)
 
 # Cores
 
@@ -18,7 +18,7 @@
 
 Black: #ffffff
 
-![img](../../assest/img/padrao-cores-readme.png)
+![img](../../assets/img/padrao-cores-readme.png)
 
 [CodePen Ref](https://codepen.io/debafig/pen/rNdGodG)
 

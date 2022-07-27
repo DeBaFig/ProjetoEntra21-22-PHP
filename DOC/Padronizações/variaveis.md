@@ -1,4 +1,4 @@
-![img](../../assest/img/Variaveis.jpg)
+![img](../../assets/img/Variaveis.jpg)
 
 # Nomear Variáveis
 

@@ -1,6 +1,6 @@
 <p align="center">
 <a target="_blank" href="https://www.entra21.com.br/aprovados"><img style="border-radius: 50%;" src="https://cdn.sonicadigital.com.br/entra21/storage/header/257/original-61f8610472d4f.png" /></a>
-<a target="_blank" href=""><img style="border-radius: 50%;" src="https://user-images.githubusercontent.com/46844031/180487135-baecf00d-ece5-4282-a5f3-6a1c4089cc02.gif" /></a>
+<a target="_blank" href=""><img style="border-radius: 50%;" src="../assest/img/banner-readme.gif" /></a>
 <hr>
 </p>
 
