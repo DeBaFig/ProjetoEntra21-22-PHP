@@ -11,7 +11,7 @@
   <b>pt-BR</b>
     <img src="https://user-images.githubusercontent.com/46844031/167033219-113ac953-af06-419c-a5a9-bc73336edb0c.png" height="30"/>
   en-US
-  <a target="_blank" href="">
+  <a target="_blank" href="DOC/README.md">
     <img src="https://user-images.githubusercontent.com/46844031/167033892-c3dd1baa-a24e-410b-a65e-eaeaf4292499.png" height="30"/>
   </a>
 </p>
