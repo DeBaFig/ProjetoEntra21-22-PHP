@@ -29,6 +29,10 @@ addresses(**id_address**, id_list_address, cep_address, number_address, compleme
 
 ![Img](../../assets/img/ERD/balcao_brasil_v1.jpg)
 
+## Referência  
+
+[link](https://help.hitachivantara.com/Documentation/Pentaho/6.0/0N0/110/040/050#:~:text=A%20zero%20to%20many%20optional,a%20maximum%20of%20one%20person.&text=A%20zero%20to%20one%20relationship,programmer%20must%20be%20a%20person.)
+
 <!-- rodapé -->
 ## Retornar README:
 
