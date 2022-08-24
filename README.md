@@ -36,6 +36,19 @@
 
 O projeto tem como objetivo concretizar os conhecimentos adquiridos durante o curso do [ENTRA21](https://www.entra21.com.br/) de PHP.
 
+## O que?   
+
+Uma ferramenta para anunciar o que quiser.
+
+## Como?  
+
+Com um acesso fácil, um anúncio intuitivo, ampla divulgação, onde o vendedor me encontra.
+
+
+## História do Usuário  
+
+Eu estou precisando de um fone novo e tenho R$100,00, no balcão Brasil posso escolher o vendedor entre novos e usados a distância de um clique.
+
 ## Sobre
 
 O [Balcão Brasil]() foi idealizado para ter uma opção ainda mais ampla quando falamos de venda/troca de mercadorias, hoje no mercado temos muitas opções de sites de intermédio, de compra e venda mas decidimos ir um pouco contra a maré, decidimos dar poder para o comprador informar sua necessidade, e o vendedor da mercadoria correr atrás do comprador!
@@ -94,9 +107,9 @@ O [Balcão Brasil]() foi idealizado para ter uma opção ainda mais ampla quando
 
 [**Bruno**](https://github.com/brwnosouza)   
 <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/104388708?v=4" width="100px;" alt=""/>
-[![Linkedin Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/)
-[![Gmail Badge](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:@gmail.com)
-[![Whatsapp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://whatsa.me/)    
+<!-- [![Linkedin Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/) -->
+<!-- [![Gmail Badge](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:@gmail.com) -->
+<!-- [![Whatsapp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://whatsa.me/)     -->
 
 [**Denize**](https://github.com/DeBaFig)  
 <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/46844031?v=4" width="100px;" alt=""/>
@@ -106,8 +119,8 @@ O [Balcão Brasil]() foi idealizado para ter uma opção ainda mais ampla quando
 
 [**Icaro**](https://github.com/Icaromelchior)  
 <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/13577500?v=4" width="100px;" alt=""/>
-[![Linkedin Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/)
-[![Gmail Badge](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:@gmail.com)
+<!-- [![Linkedin Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/) -->
+<!-- [![Gmail Badge](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:@gmail.com) -->
 [![Whatsapp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://whatsa.me/5547997723931)  
 
 [**Jennifer**](https://github.com/jennibarbosa)  
@@ -119,8 +132,8 @@ O [Balcão Brasil]() foi idealizado para ter uma opção ainda mais ampla quando
 [**Lucas**](https://github.com/PassosLucasB)  
 <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/64398756?v=4" width="100px;" alt=""/>
 [![Linkedin Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lucas-bernardelli-dos-passos-a74242174/)
-[![Gmail Badge](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:@gmail.com)
-[![Whatsapp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://whatsa.me/)
+[![Gmail Badge](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:passosl@outlook.com)
+[![Whatsapp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://whatsa.me/5547992273037)
 
 [**Paula**](https://github.com/PaulaKinder)  
 <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/103958106?v=4" width="100px;" alt=""/>
@@ -130,6 +143,6 @@ O [Balcão Brasil]() foi idealizado para ter uma opção ainda mais ampla quando
 
 [**Vinicius**](https://github.com/Vinivinix)  
 <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/104091199?v=4" width="100px;" alt=""/>
-[![Linkedin Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/)
-[![Gmail Badge](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:@gmail.com)
-[![Whatsapp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://whatsa.me/)
+<!-- [![Linkedin Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/) -->
+<!-- [![Gmail Badge](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:@gmail.com) -->
+<!-- [![Whatsapp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://whatsa.me/) -->
