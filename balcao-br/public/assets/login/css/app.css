@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    height: 100vh;
+    overflow: hidden;
+}
+.center {
+    position: absolute;
+    top: 50%;
+    left: 64%;
+    transform: translate(-50%, -50%);
+    width: 560px;
+    height: 600px;
+    background: #689f38;
+    border-radius: 26px;
+}
+.center h1 {
+    text-align: center;
+    padding: 0 0 20px 0;
+    font-size: 36px;
+    font-weight: 700;
+}
+.center form {
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+form .text-fild {
+    position: relative;
+    border-bottom: 1px solid #000;
+    margin: 60px 0;
+}
+
+.text-fild input {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+.text-fild label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #000;
+    transform: translateY(-50%);
+    font-size: 14px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+.text-fild span::before {
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #000;
+    transition: 0.5s;
+}
+.text-fild input:focus ~ label,
+.text-fild input:valid ~ label {
+    top: -5px;
+    color: #000;
+}
+.text-fild input:focus ~ span::before,
+.text-fild input:valid ~ span::before {
+    width: 100%;
+}
+.pass {
+    margin: 60px 0 60px 5px;
+    cursor: pointer;
+    text-align: center;
+}
+.pass:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    width: 264px;
+    height: 57px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 100px;
+    background: #387002;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+}
+.btn:hover {
+    border-color: #000;
+    transition: 0.5s;
+}
+
+.signup_link {
+    margin: 60px 0;
+    text-align: center;
+    font-size: 16px;
+}
+.signup_link a {
+    color: #387002;
+    text-decoration: none;
+}
+.signup_link a:hover {
+    text-decoration: underline;
+}
+
+.center-2 {
+    position: absolute;
+    top: 50%;
+    right: 35%;
+    transform: translate(-50%, -50%);
+    width: 560px;
+    height: 600px;
+    background: #fff;
+    border-radius: 26px;
+    box-shadow: 0 0 15px #888;
+}
+
+.center-2 img {
+    margin-left: 80px;
+}
+.center-2 h2 {
+    color: #000;
+    text-align: center;
+    padding: 0 0 20px 0;
+    font-size: 36px;
+    font-weight: 700;
+}
