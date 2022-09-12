@@ -1,3 +1,17 @@
-*{
-  font: optional;
+:root {
+  --primary500: #99d066;
+  --primary700: #689F38;
+  --primary900: #387002;
+  --secondary50: #82b3c9; 
+  --secondary100: #b3e5fc; 
+  --secondary5200: #e6ffff; 
+}
+* {
+  color: black;
+}
+a, a:hover, a:focus{
+  color: black;
+}
+nav {
+  background-color: var(--primary700);
 }
