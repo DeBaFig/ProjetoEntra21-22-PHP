@@ -107,9 +107,9 @@ O [Balcão Brasil]() foi idealizado para ter uma opção ainda mais ampla quando
 
 [**Bruno**](https://github.com/brwnosouza)   
 <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/104388708?v=4" width="100px;" alt=""/>
-<!-- [![Linkedin Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/) -->
-<!-- [![Gmail Badge](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:@gmail.com) -->
-<!-- [![Whatsapp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://whatsa.me/)     -->
+[![Linkedin Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/brunodesouzabs)
+[![Gmail Badge](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:brunohyro@hotmail.com)
+[![Whatsapp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://whatsa.me/5547991610110)    
 
 [**Denize**](https://github.com/DeBaFig)  
 <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/46844031?v=4" width="100px;" alt=""/>
