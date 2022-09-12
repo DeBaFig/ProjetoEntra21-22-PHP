@@ -156,9 +156,9 @@ O [Balcão Brasil]() foi idealizado para ter uma opção ainda mais ampla quando
 [x] - denize
 [ ] - lucas 
 [ ] - bruno 
-[ ] - paula
+[X] - paula
 [ ] - jennifer
-[ ] - icaro 
+[ok] - icaro 
 [ ] - vinicius 
 
 
