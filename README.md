@@ -154,7 +154,7 @@ O [Balcão Brasil]() foi idealizado para ter uma opção ainda mais ampla quando
 2 - Todos devem rodar o laravel a partir do repositorio da equipe e colcoar um OK aqui nesta lista (cada um coloca o seu ok quando o laravel rodar no seu pc para o repo da equipe)
 
 [x] - denize
-[ ] - lucas 
+[X] - lucas - OK
 [ ] - bruno 
 [X] - paula
 [ ] - jennifer
