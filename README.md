@@ -146,3 +146,29 @@ O [Balcão Brasil]() foi idealizado para ter uma opção ainda mais ampla quando
 <!-- [![Linkedin Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/) -->
 <!-- [![Gmail Badge](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:@gmail.com) -->
 <!-- [![Whatsapp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://whatsa.me/) -->
+
+
+
+12/09/2022
+1 - Instalar o laravel para o projeto da equipe (pode usar do icaro) 
+2 - Todos devem rodar o laravel a partir do repositorio da equipe e colcoar um OK aqui nesta lista (cada um coloca o seu ok quando o laravel rodar no seu pc para o repo da equipe)
+
+[ ] - denize
+[ ] - lucas 
+[ ] - bruno 
+[ ] - paula
+[ ] - jennifer
+[ ] - icaro 
+[ ] - vinicius 
+
+
+3 - Login/Recuperação Senha: Icaro  e Lucas
+  - criar um blade qualquer para ver a tela no projeto 
+4 - Cadastro: Jeniffer e Paula
+  - criar um blade qualquer para ver a tela no projeto
+5 - Balcão Anuncios: Bruno 
+  - criar um blade qualquer para ver a tela no projeto
+6 - Dados permanentes: Denize (entrada dados)
+  - aguardar. 
+
+
