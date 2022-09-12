@@ -153,7 +153,7 @@ O [Balcão Brasil]() foi idealizado para ter uma opção ainda mais ampla quando
 1 - Instalar o laravel para o projeto da equipe (pode usar do icaro) 
 2 - Todos devem rodar o laravel a partir do repositorio da equipe e colcoar um OK aqui nesta lista (cada um coloca o seu ok quando o laravel rodar no seu pc para o repo da equipe)
 
-[ ] - denize
+[x] - denize
 [ ] - lucas 
 [ ] - bruno 
 [ ] - paula
