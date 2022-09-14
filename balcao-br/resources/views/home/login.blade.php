@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Login</title>
-  <link rel="stylesheet" href="/public/assets/login/css/app.css">
+  <link rel="stylesheet" href="/assets/login/css/app.css">
 
 </head>
 
@@ -34,7 +34,7 @@
   </form>
   <div class="center-2">
     <h2>Balcão Brasil</h2>
-    <img src="img/lazy 1.png" alt="imagem de uma pessoa com a perna em cima de uma meza" />
+    <img src="/assets/login/img/lazy 1.png" alt="imagem de uma pessoa com a perna em cima de uma meza" />
 
   </div>
 </body>
