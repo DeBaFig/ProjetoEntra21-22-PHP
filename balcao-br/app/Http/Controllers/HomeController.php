@@ -12,5 +12,4 @@ class HomeController extends Controller
         $viewData["title"] = "Em contrução!";
         return view('building.index')->with("viewData", $viewData);
     }
-
 }
