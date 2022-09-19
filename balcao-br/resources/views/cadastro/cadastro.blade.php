@@ -18,12 +18,12 @@
       <div class="text-fild">
         <input type="text" required>
         <span></span>
-        <label>Full name</label>
+        <label>Nome completo</label>
       </div>
       <div class="text-fild">
         <input type="mailto" required>
         <span></span>
-        <label>Email</label>
+        <label>E-mail</label>
       </div>
 
       <div class="text-fild submit-line">
@@ -32,7 +32,7 @@
         </button>
         <input id="password1" type="password" required>
         <span></span>
-        <label>Password</label>
+        <label>Senha</label>
       </div>
 
       <div class="text-fild submit-line">
@@ -41,14 +41,14 @@
          </button>
         <input id="password2" type="password" required> 
         <span></span>
-        <label>Confirm Password</label>
+        <label>Confirme sua senha</label>
       </div> 
       <div class="container">
         <input type="checkbox" id="horns" name="aceite">
-        <label for="horns">I have read and agreed to the Terms of Service and Privacy Policy</label>
+        <label for="horns">Li e concordo com os Termos de Serviço e Política de Privacidade</label>
       </div>
       <input class="btn" type="submit" value="Criar conta">
-      <div class="pass">Already have an account? Log In</div>
+      <div class="pass">Já tem uma conta? Entre aqui! </div>
   </div>
   </div>
   </form>
