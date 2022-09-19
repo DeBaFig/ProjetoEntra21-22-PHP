@@ -1,40 +1,48 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
 <head>
-  <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link href="{{ asset('/assets/cadastro/css/bootstrap.css') }}" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title> Crie sua conta </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="/assets/cadastro/css/style.css">
+
 </head>
 <body>
-<div class="container text-center">
-    <div class="row">
-        <div class="col-5 rounded-5" style="background-color: #689F38">
-            <h1>Balcão Brasil</h1>
-            <img src="/assets/cadastro/img/lazy.png" alt="logobalcaobrasil" class="img-fluid"> 
-            <div class="row g-0 text-center">
-                </div> 
-        </div>
-        <div class="col-7 rounded-5 border border-2">
-            <h2> Crie sua conta</h2>
-            <form method="post"></form>
-               <div class="text-fild">         
-                <input type="text" name="Full Name" placeholder="Full Name" class="border-0"><br><br> 
-                <input type="email" name="Email" placeholder="Email" class="border-0"><br><br>
-                <input type="password" name="Password" placeholder="Password" class="border-0"><br><br>
-                <input type="password" name="Confirm Password" placeholder="Confirm Password"class="border-0"><br><br>
-                <input type="submit" value="Criar Conta" class="btn btn-success" class="border-0">
-
-                                      
-              </form>
-
-
-        </div>
-    </div>
-</div>
-
+  <div class="center">
+    <h1>Crie sua conta</h1>
+    <form method="post">
+      <div class="text-fild">
+        <input type="text" required>
+        <span></span>
+        <label>Full name</label>
+      </div>
+      <div class="text-fild">
+        <input type="password" required>
+        <span></span>
+        <label>Email</label>
+      </div>
+      <div class="text-fild">
+        <input type="password" required>
+        <span></span>
+        <label>Password</label>
+      </div>
+      <div class="text-fild">
+        <input type="confirm_password" required>
+        <span></span>
+        <label>Confirm Password</label>
+      </div>
+      <div class="pass">I have read and agreed to the Terms of Service and Privacy Policy</div>
+      <input class="btn" type="submit" value="Criar conta">
+      <div class="pass">Already have an account? Log In</div>
+      </div>
+  </div>
+  </form>
+  <div class="center-2">
+    <h2>Balcão Brasil</h2>
+    <img src="/assets/cadastro/img/lazy.png" alt="logo-balcao" height="350" width="350" />
+      </div>
 </body>
-
 
 </html>
