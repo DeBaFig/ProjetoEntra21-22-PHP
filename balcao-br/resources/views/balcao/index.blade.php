@@ -4,8 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-  <link href="css/balcao/style.css" rel="stylesheet"/>
-  <link rel="icon" href="/public/assets/layouts/img/brand/brand_256x256.jpg">
+  <link href="assets/balcao/style.css" rel="stylesheet"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://kit.fontawesome.com/f359eececc.js" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
@@ -13,14 +12,14 @@
 </head>
 <body>
   <header>
-      <img class="logo" img src="/balcao-br/public/assets/layouts/img/brand/brand_256x256.jpg"></img>
+      <img class="logo" img src="assets/layouts/img/brand/brand_256x256.jpg"></img>
       <form action="#" method="post">
         <input type="text" name="search" placeholder="Faça sua busca" required>
         <button type="submit"> <i class="fas fa-search"> </i> </button>
       </form>
       <ul>
         <!-- <li> <i class="fa-solid fa-user"></i> <a href="#">Cadastro</a> </li> -->
-        <a href="#"><span class="fa-solid fa-user"></span></a>
+        <a href="{{ route('login')}}"><span class="fa-solid fa-user"></span></a>
         <!-- <li> <i class="fa-solid fa-address-card"></i> <a href="#">Termos de uso</a></li> -->
         <a href="#"><span class="fa-solid fa-address-card"></span></a>
         <!-- <li> <i class="fa-solid fa-cart-shopping"></i> <a href="#">Catálogo</a></li> -->
