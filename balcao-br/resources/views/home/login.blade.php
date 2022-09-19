@@ -6,35 +6,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Login</title>
-  <link rel="stylesheet" href="/public/assets/login/css/app.css">
+  <link rel="stylesheet" href="/assets/login/css/app.css">
 
 </head>
 
 <body>
   <div class="center">
     <h1>Entrar</h1>
-    <form method="post">
+    <form method="post" action="{{route('auth.user')}}">
+  
       <div class="text-fild">
-        <input type="text" required>
+        <input type="email" name="email "required>
         <span></span>
-        <label>Usuario</label>
+        <label>email</label>
       </div>
       <div class="text-fild">
-        <input type="password" required>
+        <input type="password" name="password" required>
         <span></span>
         <label>Senha</label>
       </div>
-      <div class="pass">Esqueceu a senha? Recuperar senha!</div>
-      <input class="btn" type="submit" value="Entrar">
-      <div class="signup_link">
-        Não tem uma conta? <a href="#">Cadastre-se!</a>
-      </div>
+        <div class="pass">Esqueceu a senha? Recuperar senha!</div>
+        <input class="btn" type="submit" value="Entrar">
+        <div class="signup_link">
+          Não tem uma conta? <a href="#">Cadastre-se!</a>
+        </div>
   </div>
   </div>
   </form>
   <div class="center-2">
     <h2>Balcão Brasil</h2>
-    <img src="img/lazy 1.png" alt="imagem de uma pessoa com a perna em cima de uma meza" />
+    <img src="/assets/login/img/lazy 1.png" alt="imagem de uma pessoa com a perna em cima de uma meza" />
 
   </div>
 </body>
