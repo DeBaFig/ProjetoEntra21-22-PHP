@@ -10,11 +10,9 @@ function hidePassword(e){
     
     $("#ueEyePass").removeClass('fa-eye-slash').addClass('fa-eye')
     $("#password").attr('type','password')
-    console.log('hidePassword')
 }
 function showPassword(e){
     e.removeClass('hide').addClass('show')
     $("#ueEyePass").removeClass('fa-eye').addClass('fa-eye-slash')
     $("#password").attr('type','text')
-    console.log('showPassword')
 }
