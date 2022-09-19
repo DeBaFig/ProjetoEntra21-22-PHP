@@ -28,7 +28,7 @@ class HomeController extends Controller
     public function building()
     {
         $viewData = [];
-        $viewData["title"] = "Em contrução!";
+        $viewData["title"] = "Em construção!";
         return view('building.index')->with("viewData", $viewData);
     }
 }
