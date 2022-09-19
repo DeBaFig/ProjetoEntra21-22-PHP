@@ -19,7 +19,7 @@
         <label>Full name</label>
       </div>
       <div class="text-fild">
-        <input type="password" required>
+        <input type="email" required>
         <span></span>
         <label>Email</label>
       </div>
@@ -29,11 +29,15 @@
         <label>Password</label>
       </div>
       <div class="text-fild">
-        <input type="confirm_password" required>
+        <input type="password" required>
         <span></span>
         <label>Confirm Password</label>
       </div>
-      <div class="pass">I have read and agreed to the Terms of Service and Privacy Policy</div>
+      <div>
+      <input type="checkbox" id="horns" name="horns">
+      <label for="horns">I have read and agreed to the Terms of Service and Privacy Policy</label>
+     </div>
+      <!-- <div class="pass"></div> -->
       <input class="btn" type="submit" value="Criar conta">
       <div class="pass">Already have an account? Log In</div>
       </div>
