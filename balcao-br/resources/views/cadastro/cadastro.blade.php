@@ -14,7 +14,7 @@
 <body>
   <div class="center">
     <h1>Crie sua conta</h1>
-    <form id="cadastro" method="post">
+    <form id="cadastro" method="get">
       <div class="text-fild">
         <input type="text" required>
         <span></span>
