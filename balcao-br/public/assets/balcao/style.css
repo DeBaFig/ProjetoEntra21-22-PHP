@@ -11,6 +11,7 @@ body{
 }
 
 .logo{
+    display: flex;
     width: 55px;
     height: 55px;
     border-radius: 100px;
@@ -19,6 +20,7 @@ body{
 }
 
 header{
+    width: 100%;
     height: 10vh;
     display: flex;
     justify-content: space-between;
@@ -219,3 +221,21 @@ footer{
 footer .social a{
     color: black;
 }
+
+.tooltip .tooltiptext {
+    font-size: 13px;
+    visibility: hidden;
+    width: auto;
+    color: #000;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    background-color: #99D066;
+    margin-left: 2px;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
