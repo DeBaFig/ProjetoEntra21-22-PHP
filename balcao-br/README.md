@@ -159,7 +159,7 @@ O [Balcão Brasil]() foi idealizado para ter uma opção ainda mais ampla quando
 [X] - paula
 [x] - jennifer
 [ok] - icaro 
-[ ] - vinicius 
+[X] - vinicius 
 
 
 3 - Login/Recuperação Senha: Icaro  e Lucas
