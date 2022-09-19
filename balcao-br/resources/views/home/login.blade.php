@@ -13,22 +13,23 @@
 <body>
   <div class="center">
     <h1>Entrar</h1>
-    <form method="post">
+    <form method="post" action="{{route('auth.user')}}">
+  
       <div class="text-fild">
-        <input type="text" required>
+        <input type="email" name="email "required>
         <span></span>
-        <label>Usuario</label>
+        <label>email</label>
       </div>
       <div class="text-fild">
-        <input type="password" required>
+        <input type="password" name="password" required>
         <span></span>
         <label>Senha</label>
       </div>
-      <div class="pass">Esqueceu a senha? Recuperar senha!</div>
-      <input class="btn" type="submit" value="Entrar">
-      <div class="signup_link">
-        Não tem uma conta? <a href="#">Cadastre-se!</a>
-      </div>
+        <div class="pass">Esqueceu a senha? Recuperar senha!</div>
+        <input class="btn" type="submit" value="Entrar">
+        <div class="signup_link">
+          Não tem uma conta? <a href="#">Cadastre-se!</a>
+        </div>
   </div>
   </div>
   </form>

@@ -99,7 +99,7 @@ form .text-fild {
     cursor: pointer;
     outline: none;
 }
-    .submit-eye {
+     .submit-eye {
         position:absolute;
         top:5px; right:0;
         z-index:10;
@@ -110,30 +110,30 @@ form .text-fild {
 
       .submit-line {
         position: relative;
-        /*width: 600px;*/
-      }
+        /* width: 600px; */
+       }
 
       .submit-line input {
         width: 100%;
-      }
+      } 
 
 .btn:hover {
     border-color: #000;
     transition: 0.5s;
-}
+} 
 
-.signup_link {
+/* .signup_link {
     margin: 60px 0;
     text-align: center;
     font-size: 16px;
-}
+} */
 .signup_link a {
     color: #387002;
     text-decoration: none;
 }
-.signup_link a:hover {
+/* .signup_link a:hover {
     text-decoration: underline;
-}
+} */
 
 .center-2 {
     position: absolute;

@@ -14,7 +14,7 @@
 <body>
   <div class="center">
     <h1>Crie sua conta</h1>
-    <form method="post">
+    <form id="cadastro" method="get">
       <div class="text-fild">
         <input type="text" required>
         <span></span>
@@ -25,19 +25,24 @@
         <span></span>
         <label>Email</label>
       </div>
-      <div class="text-fild">
-        <input type="password" required>
+
+      <div class="text-fild submit-line">
+        <button class="submit-eye">
+          <i id="ueEyePass1" class="fa fa-eye ueEyePass1"></i>
+        </button>
+        <input id="password1" type="password" required>
         <span></span>
         <label>Password</label>
       </div>
+
       <div class="text-fild submit-line">
         <button class="submit-eye">
-          <i id="ueEyePass" class="fa fa-eye ueEyePass"></i>
+          <i id="ueEyePass2" class="fa fa-eye ueEyePass2"></i>
          </button>
-        <input id="password" type="password" required> 
+        <input id="password2" type="password" required> 
         <span></span>
         <label>Confirm Password</label>
-      </div>
+      </div> 
       <div class="container">
         <input type="checkbox" id="horns" name="aceite">
         <label for="horns">I have read and agreed to the Terms of Service and Privacy Policy</label>

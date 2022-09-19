@@ -131,3 +131,7 @@ form .text-fild {
     font-size: 36px;
     font-weight: 700;
 }
+
+.center-error {
+    right: 300px;
+}
