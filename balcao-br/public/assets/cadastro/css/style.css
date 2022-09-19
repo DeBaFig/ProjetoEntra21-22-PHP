@@ -80,22 +80,43 @@ form .text-fild {
 .pass:hover {
     text-decoration: underline;
 }
-.checkbox: {
+.container {
  color: rgb(188, 185, 185);
+
 }
+
 .btn {
+    margin-top: 15px;
     width: 500px;
     height: 57px;
     border: none;
     border-radius: 5px;
     font-size: 16px;
-    font-weight: 700;
-    margin-left: 15px;
+    font-weight: 800;
+    margin-left: 11px;
     background: #387002;
     color: #fff;
     cursor: pointer;
     outline: none;
 }
+    .submit-eye {
+        position:absolute;
+        top:5px; right:0;
+        z-index:10;
+        border:none;
+        background:transparent;
+        outline:none;
+      }
+
+      .submit-line {
+        position: relative;
+        /*width: 600px;*/
+      }
+
+      .submit-line input {
+        width: 100%;
+      }
+
 .btn:hover {
     border-color: #000;
     transition: 0.5s;
@@ -137,4 +158,14 @@ form .text-fild {
     padding: 0 0 20px 0;
     font-size: 36px;
     font-weight: 700;
+}
+
+
+.show{
+    /* css you want */
+    color: blue
+}
+.hide{
+    /* css you want */
+    color: red
 }
