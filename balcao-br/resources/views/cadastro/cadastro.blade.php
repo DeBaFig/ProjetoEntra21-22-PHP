@@ -14,7 +14,7 @@
 <body>
   <div class="center">
     <h1>Crie sua conta</h1>
-    <form id="cadastro" method="get">
+    <form id="cadastro" method="post">
       <div class="text-fild">
         <input type="text" required>
         <span></span>
@@ -41,7 +41,7 @@
          </button>
         <input id="password2" type="password" required> 
         <span></span>
-        <label>Confirme sua senha</label>
+        <label>Confirme senha</label>
       </div> 
       <div class="container">
         <input type="checkbox" id="horns" name="aceite">
