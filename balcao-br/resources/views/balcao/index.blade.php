@@ -21,7 +21,7 @@
         <!-- <li> <i class="fa-solid fa-user"></i> <a href="#">Cadastro</a> </li> -->
         <a href="{{ route('login')}}"><span class="fa-solid fa-user"></span></a>
         <!-- <li> <i class="fa-solid fa-address-card"></i> <a href="#">Termos de uso</a></li> -->
-        <a href="#"><span class="fa-solid fa-address-card"></span></a>
+        <a href="{{ route('register')}}"><span class="fa-solid fa-address-card"></span></a>
         <!-- <li> <i class="fa-solid fa-cart-shopping"></i> <a href="#">Catálogo</a></li> -->
         <a href="#"><span class="fa-solid fa-cart-shopping"></span></a>
       </ul>

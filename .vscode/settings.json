@@ -1,0 +1,17 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "3.89.36.150",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "balcaobrasil",
+            "username": "phpe2122g1",
+            "database": "phpe2122g1",
+            "password": "phpe2122g1@22@ago"
+        }
+    ]
+}
