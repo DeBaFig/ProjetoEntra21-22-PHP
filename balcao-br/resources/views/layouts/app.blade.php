@@ -1,7 +1,9 @@
-@extends('layouts.appMaster' )
+@extends('layouts.appMain' )
+
 @section('layoutContent')
-<div class="container">
+
+<div class="container-fluid mt-2">
     @yield('content')
-</div>
+  </div>
 
 @endsection
