@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        {{ asset('')}}
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="">
@@ -25,7 +24,7 @@
     <body id="page-top">
         <!-- preloader -->
         <div class="preloader">
-            <img src="{{ asset('')}}panel/assets/images/preloader.gif" alt="">
+            <img src="{{ asset('panel/assets/images/preloader.gif')}}" alt="">
         </div>
 
         

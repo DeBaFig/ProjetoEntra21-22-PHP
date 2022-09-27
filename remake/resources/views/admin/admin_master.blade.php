@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <!-- {{asset('')}} -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="">
@@ -23,15 +22,8 @@
         <link rel="stylesheet" href="{{asset('panel/assets/css/style.css')}}">
     </head>
     <body id="page-top">
-        <!-- preloader -->
-        <div class="preloader">
-            <img src="{{asset('panel/assets/images/preloader.gif')}}" alt="">
-        </div>
-
         
         @yield('admin')
-
-
         
         <!-- jquery -->
         <script src="{{asset('panel/assets/js/jquery.min.js')}}"></script>
@@ -66,4 +58,3 @@
 
     </body>
 </html>
-<!-- https://www.youtube.com/watch?v=Vn3tADCrNWo&list=PL8z-YHNIa8wmvOGldqqxtqJxVBvqhoXbq&index=6 -->

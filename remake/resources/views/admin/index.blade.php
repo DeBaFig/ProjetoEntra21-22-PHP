@@ -2,14 +2,13 @@
 @section('admin')
 <!-- wrapper -->
 <div class="wrapper">
-
     <!-- header area -->
     <header class="header_area">
         <!-- logo -->
         <div class="sidebar_logo">
             <a href="index.html">
-                <img src="panel/assets/images/logo.png" alt="" class="img-fluid logo1">
-                <img src="panel/assets/images/logo_small.png" alt="" class="img-fluid logo2">
+                <img src="{{ asset('panel/assets/images/logo.png')}}" alt="" class="img-fluid logo1">
+                <img src="{{ asset('panel/assets/images/logo_small.png')}}" alt="" class="img-fluid logo2">
             </a>
         </div>
         <div class="sidebar_btn">
@@ -41,7 +40,7 @@
                         <li>
                             <a href="#">
                                 <div class="img-part">
-                                    <img src="panel/assets/images/user1.jpg" alt="" class="img-fluid">
+                                    <img src="{{ asset('panel/assets/images/user1.jpg')}}" alt="" class="img-fluid">
                                 </div>
                                 <div class="text-part">
                                     <h6>Madelyn <span><i class="far fa-clock"></i> today</span></h6>
@@ -52,7 +51,7 @@
                         <li>
                             <a href="#">
                                 <div class="img-part">
-                                    <img src="panel/assets/images/user2.jpg" alt="" class="img-fluid">
+                                    <img src="{{ asset('panel/assets/images/user2.jpg')}}" alt="" class="img-fluid">
                                 </div>
                                 <div class="text-part">
                                     <h6>Melvin <span><i class="far fa-clock"></i> today</span></h6>
@@ -63,7 +62,7 @@
                         <li>
                             <a href="#">
                                 <div class="img-part">
-                                    <img src="panel/assets/images/user3.jpg" alt="" class="img-fluid">
+                                    <img src="{{ asset('panel/assets/images/user3.jpg')}}" alt="" class="img-fluid">
                                 </div>
                                 <div class="text-part">
                                     <h6>Olinda <span><i class="far fa-clock"></i> today</span></h6>
@@ -74,7 +73,7 @@
                         <li>
                             <a href="#">
                                 <div class="img-part">
-                                    <img src="panel/assets/images/user1.jpg" alt="" class="img-fluid">
+                                    <img src="{{ asset('panel/assets/images/user1.jpg')}}" alt="" class="img-fluid">
                                 </div>
                                 <div class="text-part">
                                     <h6>Johnson <span><i class="far fa-clock"></i> today</span></h6>
@@ -85,7 +84,7 @@
                         <li>
                             <a href="#">
                                 <div class="img-part">
-                                    <img src="panel/assets/images/user3.jpg" alt="" class="img-fluid">
+                                    <img src="{{ asset('panel/assets/images/user3.jpg')}}" alt="" class="img-fluid">
                                 </div>
                                 <div class="text-part">
                                     <h6>Madelyn <span><i class="far fa-clock"></i> today</span></h6>
@@ -96,7 +95,7 @@
                         <li>
                             <a href="#">
                                 <div class="img-part">
-                                    <img src="panel/assets/images/user2.jpg" alt="" class="img-fluid">
+                                    <img src="{{ asset('panel/assets/images/user2.jpg')}}" alt="" class="img-fluid">
                                 </div>
                                 <div class="text-part">
                                     <h6>Melvin <span><i class="far fa-clock"></i> today</span></h6>
@@ -107,7 +106,7 @@
                         <li>
                             <a href="#">
                                 <div class="img-part">
-                                    <img src="panel/assets/images/user3.jpg" alt="" class="img-fluid">
+                                    <img src="{{ asset('panel/assets/images/user3.jpg')}}" alt="" class="img-fluid">
                                 </div>
                                 <div class="text-part">
                                     <h6>Olinda <span><i class="far fa-clock"></i> today</span></h6>
@@ -118,7 +117,7 @@
                         <li>
                             <a href="#">
                                 <div class="img-part">
-                                    <img src="panel/assets/images/user1.jpg" alt="" class="img-fluid">
+                                    <img src="{{ asset('panel/assets/images/user1.jpg')}}" alt="" class="img-fluid">
                                 </div>
                                 <div class="text-part">
                                     <h6>Johnson <span><i class="far fa-clock"></i> today</span></h6>
