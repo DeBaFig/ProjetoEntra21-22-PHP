@@ -1,17 +1,27 @@
 models:
-  Profile:
-    ddd_phone: integer
-    phone: integer
-    address: string:100
-    cep: integer
-    email_verified_at: timestamp
-    cpf: integer
-    status: boolean
-    facebook: string
-    instagram: string
-    avatar: string
+  Admin:
+    name: string
+    email: string
+    email_verified_at: timestamp  nullable 
+    password: string
+    isAtive: tinyInteger default:1
+
+  User:
+    name: string
+    email: string
+    email_verified_at: timestamp  nullable 
+    password: string
+    ddd_phone: tinyInteger nullable 
+    phone: string nullable 
+    address: string:150 nullable 
+    cep: string nullable 
+    cpf: string nullable 
+    facebook: string nullable 
+    instagram: string nullable 
+    avatar: string nullable 
+    isAtive: tinyInteger default:1
     relationships:
-      hasMany: Item, User
+      hasMany: Item
 
   Category:
     title: string:50
@@ -25,18 +35,24 @@ models:
     photo_image: string 
     create_at: timestamp
    
-  Item:
-    title: unique integer
+  Product:
+    title: string
     description: nullable string:255
     address: nullable string:150
     reference_link: string
     min_price: integer
     max_price: integer
     publish_at: timestamp
-    quantity: integer
-    new: enum:Novo,Usado
-    negociate: boolean
-    status: enum:Ativo,Excluído,Pausado default:'ativo'
-    purpose: enum:comprar,alugar
+    quantity: tinyInteger
+    isNew: tinyInteger
+    isNegotiable: tinyInteger
+    isActive: tinyInteger default:1
     relationships:
       hasMany: Photo
+      belongsTo: User
+    
+    Comment:
+      text_input: string:255
+      created_at: timestamp defaul:now
+        relationships:
+          belonsgsTo: Product
