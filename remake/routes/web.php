@@ -30,31 +30,16 @@ Route::get('/dashboard', [AdminController::class, 'Dashboard'])->name('admin.das
 
 
 
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/contato', [App\Http\Controllers\HomeController::class, 'contact'])->name('contato');
+Route::get('/Sobre', [App\Http\Controllers\HomeController::class, 'about'])->name('sobre');
+Route::get('/SobreBalcao', [App\Http\Controllers\HomeController::class, 'aboutBalcao'])->name('sobre-balcao');
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Route::get('/', function () {
-    return view('welcome');
-});
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    return view('user.dashboard');
 })->middleware(['auth'])->name('dashboard');
 
 require __DIR__.'/auth.php';
