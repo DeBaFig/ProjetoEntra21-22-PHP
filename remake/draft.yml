@@ -6,12 +6,12 @@ models:
     password: string
     isAtive: tinyInteger default:1
 
-  User:
+  User2:
     name: string
     email: string
     email_verified_at: timestamp  nullable 
     password: string
-    ddd_phone: tinyInteger nullable 
+    ddd_phone: Integer nullable 
     phone: string nullable 
     address: string:150 nullable 
     cep: string nullable 
@@ -39,20 +39,19 @@ models:
     title: string
     description: nullable string:255
     address: nullable string:150
-    reference_link: string
-    min_price: integer
-    max_price: integer
+    reference_link: nullable  string
+    min_price: nullable  integer
+    max_price: nullable  integer
     publish_at: timestamp
-    quantity: tinyInteger
-    isNew: tinyInteger
-    isNegotiable: tinyInteger
+    quantity: integer default:1
+    isNew: tinyInteger  nullable 
+    isNegotiable: tinyInteger  nullable 
     isActive: tinyInteger default:1
     relationships:
       hasMany: Photo
       belongsTo: User
     
-    Comment:
-      text_input: string:255
-      created_at: timestamp defaul:now
-        relationships:
-          belonsgsTo: Product
+  Comment:
+    text_input: string:255
+    relationships:
+      belongsTo: Product
