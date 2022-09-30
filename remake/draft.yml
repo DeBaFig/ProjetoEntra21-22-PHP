@@ -1,0 +1,57 @@
+models:
+  Admin:
+    name: string
+    email: string
+    email_verified_at: timestamp  nullable 
+    password: string
+    isAtive: tinyInteger default:1
+
+  User2:
+    name: string
+    email: string
+    email_verified_at: timestamp  nullable 
+    password: string
+    ddd_phone: Integer nullable 
+    phone: string nullable 
+    address: string:150 nullable 
+    cep: string nullable 
+    cpf: string nullable 
+    facebook: string nullable 
+    instagram: string nullable 
+    avatar: string nullable 
+    isAtive: tinyInteger default:1
+    relationships:
+      hasMany: Item
+
+  Category:
+    title: string:50
+  
+  Subcategory:
+    title: string:50
+    relationships:
+      hasMany: Category
+
+  Photo:
+    photo_image: string 
+    create_at: timestamp
+   
+  Product:
+    title: string
+    description: nullable string:255
+    address: nullable string:150
+    reference_link: nullable  string
+    min_price: nullable  integer
+    max_price: nullable  integer
+    publish_at: timestamp
+    quantity: integer default:1
+    isNew: tinyInteger  nullable 
+    isNegotiable: tinyInteger  nullable 
+    isActive: tinyInteger default:1
+    relationships:
+      hasMany: Photo
+      belongsTo: User
+    
+  Comment:
+    text_input: string:255
+    relationships:
+      belongsTo: Product

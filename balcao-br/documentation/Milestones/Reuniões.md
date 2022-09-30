@@ -4,6 +4,12 @@
 
 - [ ] [Quarta 10/07/2022](milestone1)
 
+
+# Deploy
+
+[Vídeo](https://youtu.be/DE6q6TJfALQ)
+
+
 <!-- rodapé -->
 ## Retornar README:
 
