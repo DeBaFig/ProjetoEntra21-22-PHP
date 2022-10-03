@@ -2,45 +2,43 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Model;
-// use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Foundation\Auth\User as Authenticatable;
-use Illuminate\Notifications\Notifiable;
-use Laravel\Sanctum\HasApiTokens;
+use Illuminate\Database\Eloquent\Model;
 
-class Admin extends Authenticatable
+class Admin extends Model
 {
     use HasFactory;
+
     /**
      * The attributes that are mass assignable.
      *
-     * @var array<int, string>
+     * @var array
      */
-    protected $guard = 'admin';
     protected $fillable = [
         'name',
         'email',
+        'email_verified_at',
         'password',
-        'status'
+        'isAtive',
     ];
 
     /**
      * The attributes that should be hidden for serialization.
      *
-     * @var array<int, string>
+     * @var array
      */
     protected $hidden = [
         'password',
-        'remember_token',
     ];
 
     /**
-     * The attributes that should be cast.
+     * The attributes that should be cast to native types.
      *
-     * @var array<string, string>
+     * @var array
      */
     protected $casts = [
-        'email_verified_at' => 'datetime',
+        'id' => 'integer',
+        'email_verified_at' => 'timestamp',
+        'isAtive' => 'integer',
     ];
 }
