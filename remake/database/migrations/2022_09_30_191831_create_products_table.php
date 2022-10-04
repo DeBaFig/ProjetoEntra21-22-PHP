@@ -3,7 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
-
+use Auth;
 class CreateProductsTable extends Migration
 {
     /**
@@ -19,6 +19,7 @@ class CreateProductsTable extends Migration
             $table->string('description', 255)->nullable();
             $table->string('address', 150)->nullable();
             $table->string('reference_link')->nullable();
+            $table->string('buyer');
             $table->integer('min_price')->nullable();
             $table->integer('max_price')->nullable();
             $table->timestamp('publish_at');

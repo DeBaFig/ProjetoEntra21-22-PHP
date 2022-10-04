@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\ProductController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -34,8 +35,14 @@ Route::get('/SobreBalcao', [App\Http\Controllers\HomeController::class, 'aboutBa
 
 
 
-Route::get('/dashboard', function () {
-    return view('user.dashboard');
+Route::get('user/add', function () {
+    return view('user.add');
+})->middleware(['auth'])->name('user.add');
+
+Route::post('/user/add', [ProductController::class, 'create'])->middleware(['auth'])->name('product.save');
+
+Route::get('dashboard', function () {
+    return view('user.add');
 })->middleware(['auth'])->name('dashboard');
 
 require __DIR__ . '/auth.php';

@@ -39,6 +39,8 @@ class Product extends Model
         'isNew' => 'integer',
         'isNegotiable' => 'integer',
         'isActive' => 'integer',
+        'buyer'=> 'string',
+
     ];
 
     public function photos()
