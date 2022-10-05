@@ -33,4 +33,8 @@
                         </div>
                         @endforeach
                     </div>
+                </div>
+            </section>
+        </div>
+    </div>
 </x-guest-layout>
