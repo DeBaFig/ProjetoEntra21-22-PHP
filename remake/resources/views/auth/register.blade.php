@@ -44,7 +44,7 @@
                     name="password_confirmation" required />
             </div>
             <!-- Termos de Uso -->
-            <a href="/resources/views/home/termos.blade.php">Ao acessar o site você aceita as Condições e Termos de
+            <a href="/resources/views/home/termos.blade.php">Ao registrar você aceita as Condições e Termos de
                 Uso</a>
 
             <div class="flex items-center justify-end mt-4">
