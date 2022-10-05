@@ -23,14 +23,12 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
-Route::get('/contato', function (Request $request){
-    $message = $request->session()->get('message');
-    $request->session()
-            ->put(
-                'message',
-                "Sua mensagem foi efetivada"
-            );
-    return view('contato', compact('message'));
+Route::get('/contato', function (){
+       return view('contato');
+})->middleware(['auth'])->name('dashboard');
+
+Route::get('/obrigado', function (){
+    return view('obrigado');
 })->middleware(['auth'])->name('dashboard');
 
 require __DIR__.'/auth.php';

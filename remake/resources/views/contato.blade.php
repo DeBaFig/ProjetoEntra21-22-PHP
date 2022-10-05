@@ -17,10 +17,9 @@
 
   <!--navbar ou div -->
 
-  <!-- <div class="flex min-h-full items-center justify-center py-20 px-20 sm:px-20 lg:px-20"> -->
-    <div class="w-full max-w-md space-y-8">
     <img src="{{ asset('assets/img/contato.png') }}"  width="600px">                            
       <form class="mt-8 space-y-6" method="POST"  action="https://formsubmit.co/balcao.brasil.adm@gmail.com">
+        <input type="hidden" name="_next" value="http://127.0.0.1:8000/obrigado"/>
 
         {{ csrf_field() }}
         
@@ -50,9 +49,6 @@
           <x-primary-button class="ml-3">
                     {{ __('Enviar') }}
                 </x-primary-button>
-
-                
-                
 
           </div>
         </div>
