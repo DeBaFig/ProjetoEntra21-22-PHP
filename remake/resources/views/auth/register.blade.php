@@ -43,9 +43,15 @@
                 <x-text-input id="password_confirmation" class="block mt-1 w-full" type="password"
                     name="password_confirmation" required />
             </div>
+
             <!-- Termos de Uso -->
-            <a href="/resources/views/home/termos.blade.php">Ao registrar você aceita as Condições e Termos de
-                Uso</a>
+            <div class="mt-4">
+                <a class="underline text-sm text-blue-600 hover:text-blue-900" href="{{ route('termos') }}">
+                    {{ __('Registrando você aceita as Condições e Termos de
+                    Uso') }}
+                </a>
+                <input type="checkbox" name="termos" required>
+            </div>
 
             <div class="flex items-center justify-end mt-4">
                 <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('login') }}">
