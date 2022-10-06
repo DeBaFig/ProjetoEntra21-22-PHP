@@ -4,29 +4,31 @@
             {{ __('termos') }}
         </h2>
     </x-slot>
-
-    <div class="py-12">
+    <div class="bg-sky-200">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 bg-white border-b border-gray-200">
-                    <h1><strong>TERMOS E CONDIÇÕES DE USO DO SITE OU BLOG</strong></h1>
+                <div class="bg-blue-400">
+                    <h1 class="flex justify-center">
+                        <strong>TERMOS E CONDIÇÕES DE USO DO SITE OU BLOG</strong>
+                    </h1>
+                    </br>
                     <p>Seja bem-vindo ao nosso site. Leia com muita atenção todos os termos abaixo.</p>
+                    </br>
                     <p>Este documento, e todo o conteúdo do site é oferecido por <strong>balcaobrasil</strong>, neste
-                        termo
-                        representado apenas por "EMPRESA", que regulamenta todos os direitos e obrigações com todos que
-                        acessam o site,
-                        denominado neste termo como "VISITANTE", reguardado todos os direitos previstos na legislação,
-                        trazem as
-                        cláusulas abaixo
-                        como requisito para acesso e visita do mesmo, situado no endereço
+                        termo representado apenas por "EMPRESA", que regulamenta todos os direitos e obrigações com
+                        todos que
+                        acessam o site, denominado neste termo como "VISITANTE", reguardado todos os direitos previstos
+                        na legislação,
+                        trazem as cláusulas abaixo como requisito para acesso e visita do mesmo, situado no endereço
                         <strong>http://www.balcaobrasil.com.br.</strong>
                     </p>
                     <p>A permanência no website implica-se automaticamente na leitura e aceitação tácita do presente
-                        termos de uso a
-                        seguir. Estes termos podem ser atualizados de acordo com as modificações da legislação relativa
-                        ou
-                        da EMPRESA.</p>
+                        termos de uso a seguir. Estes termos podem ser atualizados de acordo com as modificações da
+                        legislação relativa
+                        ou da EMPRESA.</p>
+                    </br>
                     <h3><strong>1. DA FUNÇÃO DO SITE</strong></h3>
+                    </br>
                     <p>Este site foi criado e desenvolvido com a função apresentar uma plataforma onde pessoas podem
                         encontrar outras pessoas para a troca de bens. A EMPRESA NÃO É RESPONSÁVEL PELAS OFERTAS
                         APRESENTADAS BEM COMO, POR EVENTUAIS PREJUÍZOS ADVINDOS DE MAUS NEGÓCIOS. Caso o Usuário
@@ -35,14 +37,16 @@
                     <p>O Usuário que criar uma oferta é o único responsável por cumprir as promessas de compra e venda
                         apresentadas.</p>
                     <p>Todo o conteúdo presente neste site deve respeitar as leis vigentes e os pricípios de educação e
-                        bons modos.
-                        TODA MANIFESTAÇÃO OFENSIVA, DESRESPEITOSA, ILEGAL OU VIOLENTA SERÁ REMOVIDA E O USUÁRIO PODERÁ
+                        bons modos.TODA MANIFESTAÇÃO OFENSIVA, DESRESPEITOSA, ILEGAL OU VIOLENTA SERÁ REMOVIDA E O
+                        USUÁRIO PODERÁ
                         SER BANIDO.</p>
                     </p>
                     <p>Todo o conteúdo é atualizado periodicamente, porém, pode conter em algum artigo, vídeo ou imagem,
                         alguma informação que não reflita a verdade atual, não podendo a EMPRESA ser responsabilizada de
                         nenhuma forma ou meio por qualquer conteúdo que não esteja devidamente atualizado.</p>
+                    </br>
                     <h3>2. <strong>DO ACEITE DOS TERMOS</strong></h3>
+                    </br>
                     <p>Este documento, chamado "Termos de Uso", aplicáveis a todos os visitantes do site, foi
                         desenvolvido por <a href="https://diegocastro.adv.br/">Diego Castro</a> Advogado - OAB/PI
                         15.613, modificado com
@@ -64,7 +68,9 @@
                         sem qualquer tipo de aviso prévio e comunicação. É importante que o VISITANTE confira sempre se
                         houve
                         movimentação e qual foi a última atualização do mesmo no começo da página.</p>
+                    </br>
                     <h3><strong>3. DO GLOSSÁRIO</strong></h3>
+                    </br>
                     <p>Este termo pode conter algumas palavras específicas que podem não se de conhecimento geral. Entre
                         elas:</p>
                     <ul>
@@ -91,7 +97,9 @@
                     <p>Em caso de dúvidas sobre qualquer palavra utilizada neste termo, o VISITANTE deverá entrar em
                         contato com
                         a EMPRESA através dos canais de comunicação encontradas no site.</p>
+                    </br>
                     <h3>4<strong>. DO ACESSO AO SITE</strong></h3>
+                    </br>
                     <p>O Site e plataforma funcionam normalmente 24 (vinte e quatro) horas por dia, porém podem ocorrer
                         pequenas
                         interrupções de forma temporária para ajustes, manutenção, mudança de servidores, falhas
@@ -119,91 +127,85 @@
                         Política de
                         Privacidade da EMPRESA.
                     </p>
+                    </br>
                     <h3><strong>5. DA LICENÇA DE USO E CÓPIA</strong></h3>
+                    </br>
                     <p>O visitante poderá acessar todo o conteúdo do website, como artigos, vídeos, imagens, produtos e
                         serviços, não significando nenhum tipo de cessão de direito ou permissão de uso, ou de cópia dos
                         mesmo.</p>
                     <p>Todos os direitos são preservados, conforme a legislação brasileira, principalmente na Lei de
                         Direitos
-                        Autorais (regulamentada na <a href="http://www.planalto.gov.br/ccivil_03/leis/l9610.htm">Lei nº
-                            9.610/18</a>), assim como no Código Civil brasileiro (regulamentada na <a            
-                            href="http://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm">Lei nº
-                            10.406/02</a>), ou
-                        quaisquer outras legislações aplicáveis.</p>
+                        Autorais (regulamentada na <a href="http://www.planalto.gov.br/ccivil_03/leis/l9610.htm">
+                            Lei nº9.610/18</a>), assim como no Código Civil brasileiro (regulamentada na
+                        <a href="http://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm">
+                            Lei nº10.406/02</a>), ou quaisquer outras legislações aplicáveis.
+                    </p>
                     <p>Todo o conteúdo do site é protegido por direitos autorais, e seu uso, cópia, transmissão, venda,
-                        cessão
-                        ou revenda, deve seguir a lei brasileira, tendo a EMPRESA todos os seus direitos reservados, e
-                        não
-                        permitindo a
-                        cópia ou utilização de nenhuma forma e meio, sem autorização expressa e por escrita da mesma.
+                        cessão ou revenda, deve seguir a lei brasileira, tendo a EMPRESA todos os seus direitos
+                        reservados, e
+                        não permitindo a cópia ou utilização de nenhuma forma e meio, sem autorização expressa e por
+                        escrita da mesma.
                     </p>
                     <p>A EMPRESA poderá em casos concretos permitir pontualmente exceções a este direito, que serão
-                        claramente
-                        destacados no mesmo, com a forma e permissão de uso do conteúdo protegido. Este direito é
-                        revogável e
-                        limitado as
-                        especificações de cada caso.</p>
+                        claramente destacados no mesmo, com a forma e permissão de uso do conteúdo protegido. Este
+                        direito é
+                        revogável e limitado as especificações de cada caso.</p>
+                    </br>
                     <h3>6.<strong> DAS OBRIGAÇÕES</strong></h3>
+                    </br>
                     <p>O VISITANTE ao utilizar o website da EMPRESA, concorda integralmente em:</p>
                     <ul>
                         <li>De nenhuma forma ou meio realizar qualquer tipo de ação que tente invadir, hacker, destruir
-                            ou
-                            prejudicar a estrutura do site, plataforma da EMPRESA ou de seus parceiros comerciais.
-                            Incluindo-se, mas
-                            não se limitando, ao envio de vírus de computador, de ataques de DDOS, de acesso indevido
-                            por falhas da
-                            mesma ou
-                            quaisquer outras forma e meio.</li>
+                            ou prejudicar a estrutura do site, plataforma da EMPRESA ou de seus parceiros comerciais.
+                            Incluindo-se, mas não se limitando, ao envio de vírus de computador, de ataques de DDOS, de
+                            acesso indevido
+                            por falhas da mesma ou quaisquer outras forma e meio.</li>
                         <li>De não realizar divulgação indevida nos comentários do site de conteúdo de SPAM, empresas
                             concorrentes, vírus, conteúdo que não possua direitos autorais ou quaisquer outros que não
-                            seja
-                            pertinente a
-                            discussão daquele texto, vídeo ou imagem.</li>
+                            seja pertinente a discussão daquele texto, vídeo ou imagem.</li>
                         <li>Da proibição em reproduzir qualquer conteúdo do site ou plataforma sem autorização expressa,
                             podendo responder civil e criminalmente pelo mesmo.</li>
                         <li>Com a Política de Privacidade do site, assim como tratamos os dados referentes ao cadastro e
                             visita no site, podendo a qualquer momento e forma, requerer a exclusão dos mesmos, através
-                            do
-                            formulário de
-                            contato.</li>
+                            do formulário de contato.</li>
                     </ul>
+                    </br>
                     <h3><strong>7. DA MONETIZAÇÃO E PUBLICIDADE</strong></h3>
+                    </br>
                     <p>A EMPRESA pode alugar ou vender espaços publicitários na plataforma, ou no site, diretamente aos
                         anunciantes,ou através de empresas especializadas com o Adsense (<a
                             href="https://www.google.com/">Google</a>),
                         Taboola ou outras plataformas especializadas como o <a href="https://eletrocriticas.com/">Eletro
                             Críticas.</a></p>
                     <p>Essas publicidades não significam nenhuma forma de endosso ou responsabilidade pelos mesmos,
-                        ficando o
-                        VISITANTE responsável pelas compras, visitas, acessos ou quaisquer ações referentes as estas
+                        ficando o VISITANTE responsável pelas compras, visitas, acessos ou quaisquer ações referentes as
+                        estas
                         empresas.</p>
                     <p>Todas as propagandas no site ou plataforma serão claramente destacadas como publicidade, como
-                        forma de
-                        disclaimer da EMPRESA e de conhecimento do VISITANTE.</p>
+                        forma de disclaimer da EMPRESA e de conhecimento do VISITANTE.</p>
                     <p>Em casos de compra de produtos ou serviços, será possível a devolução em até 07 (sete) dias,
-                        conforme o
-                        Código de Defesa do Consumidor.</p>
+                        conforme o Código de Defesa do Consumidor.</p>
                     <p>Estes anúncios podem ser selecionados pela empresa de publicidade automaticamente, conforme as
-                        visitas
-                        recentes do VISITANTE, assim como baseado no seu histórico de busca, conforme as políticas de
-                        acesso da
-                        plataforma.
+                        visita recentes do VISITANTE, assim como baseado no seu histórico de busca, conforme as
+                        políticas de
+                        acesso da plataforma.
                     </p>
+                    </br>
                     <h3>8. <strong>DOS TERMOS GERAIS</strong></h3>
+                    </br>
                     <p>O Site irá apresentar hiperlinks durante toda a sua navegação, que podem levar diretamente para
-                        outra
-                        página da EMPRESA ou para sites externos.</p>
+                        outra página da EMPRESA ou para sites externos.</p>
                     <p>Apesar da EMPRESA apenas criar links para sites externos de extrema confiança, caso o usuário
-                        acesse um
-                        site externo, a EMPRESA não tem nenhuma responsabilidade pelo meio, sendo uma mera indicação de
-                        complementação de
-                        conteúdo, ficando o mesmo responsável pelo acesso, assim como sobre quaisquer ações que venham a
-                        realizar
-                        neste site.</p>
+                        acesse um site externo, a EMPRESA não tem nenhuma responsabilidade pelo meio, sendo uma mera
+                        indicação de
+                        complementação de conteúdo, ficando o mesmo responsável pelo acesso, assim como sobre quaisquer
+                        ações que venham a
+                        realizar neste site.</p>
                     <p>Em caso que ocorra eventuais conflitos judiciais entre o VISITANTE e a EMPRESA, o foro elegido
-                        para a
-                        devida ação será o da comarca da Empresa, mesmo que haja outro mais privilegiado.</p>
+                        para a devida ação será o da comarca da Empresa, mesmo que haja outro mais privilegiado.</p>
+                    </br>
                     <p>Este Termo de uso é valido a partir de 14 de setembro de 2021.</p>
+                    </br>
                 </div>
             </div>
         </div>
