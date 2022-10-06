@@ -6,13 +6,13 @@ created:
     - database/factories/PhotoFactory.php
     - database/factories/ProductFactory.php
     - database/factories/CommentFactory.php
-    - database/migrations/2022_10_03_171526_create_admins_table.php
-    - database/migrations/2022_10_03_171527_create_user2s_table.php
-    - database/migrations/2022_10_03_171528_create_categories_table.php
-    - database/migrations/2022_10_03_171529_create_subcategories_table.php
-    - database/migrations/2022_10_03_171530_create_photos_table.php
-    - database/migrations/2022_10_03_171531_create_products_table.php
-    - database/migrations/2022_10_03_171532_create_comments_table.php
+    - database/migrations/2022_10_05_173051_create_admins_table.php
+    - database/migrations/2022_10_05_173052_create_user2s_table.php
+    - database/migrations/2022_10_05_173053_create_categories_table.php
+    - database/migrations/2022_10_05_173054_create_subcategories_table.php
+    - database/migrations/2022_10_05_173055_create_photos_table.php
+    - database/migrations/2022_10_05_173056_create_products_table.php
+    - database/migrations/2022_10_05_173057_create_comments_table.php
     - app/Models/Admin.php
     - app/Models/User2.php
     - app/Models/Category.php

@@ -27,7 +27,7 @@ class AdminFactory extends Factory
             'email' => $this->faker->safeEmail,
             'email_verified_at' => $this->faker->dateTime(),
             'password' => $this->faker->password,
-            'isAtive' => $this->faker->numberBetween(-8, 8),
+            'isActive' => $this->faker->numberBetween(0,1),
         ];
     }
 }
