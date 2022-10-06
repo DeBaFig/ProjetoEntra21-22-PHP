@@ -29,7 +29,7 @@ class User extends Authenticatable
         'facebook',
         'instagram',
         'avatar',
-        'isAtive',
+        'isActive',
     ];
 
     /**

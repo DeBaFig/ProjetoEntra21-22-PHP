@@ -2,16 +2,18 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Photo;
 use Illuminate\Http\Request;
-use App\Models\Product;
 use Auth;
 
 class HomeController extends Controller
 {
     public function index(Request $request)
     {
-
-        return view('home.index');
+        // $viewData = Product::all();
+        $viewData = Photo::select('products.title', 'photos.photo_image' ,'products.isNew' , 'products.max_price', 'products.isNegotiable')
+            ->join('products', 'photos.id', '=', 'products.id')->where('isActive', '=', 1)->get();
+        return view('home.index')->with("viewData", $viewData);
     }
     public function about()
     {
