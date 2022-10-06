@@ -23,7 +23,7 @@ class HomeController extends Controller
                 "Bruno" => ['name' => "Bruno de Souza", 'city' => "Penha - SC", 'img' => "bruno.jpg", 'desc' => "Nascido em Belo Horizonte (MG) há 18 anos. Interesse por informática e programação desde muito tempo, e trabalhando na área de hardware há quase dois anos. Participar do Entra21 me despertou mais vontade de aprender e progredir na área! Atualamente também cursando superior de Análise e Desenvolvimento de Sistemas.", 'link' => "https://github.com/brwnosouza"],
                 "Paula" => ['name' => "", 'city' => "", 'img' => "paula.jpg", 'desc' => "", 'link' => ""],
                 "Jennifer" => ['name' => "", 'city' => "", 'img' => "jennifer.jpg", 'desc' => "", 'link' => ""],
-                "Lucas" => ['name' => "", 'city' => "", 'img' => "lucas.jpg", 'desc' => "", 'link' => ""],
+                "Lucas" => ['name' => "Lucas Bernardelli dos Passos", 'city' => "Balneário Camboriú", 'img' => "lucas.jpg", 'desc' => "Acadêmico de Engenharia de Software e estudante de desenvolvimento web. Na trilha da construção do conhecimento necessário para contribuir para a sociedade de maneira mais produtiva, criativa e ágil. Buscando desenvolver de maneira sólida as habilidades para a construção de uma carreira. Excelente comunicador, buscador de conhecimento e apaixonado por tecnologia.", 'link' => "https://github.com/PassosLucasB"],
                 "Adriano" => ['name' => "", 'city' => "", 'img' => "adriano.jpg", 'desc' => "", 'link' => ""]
             ];
 
