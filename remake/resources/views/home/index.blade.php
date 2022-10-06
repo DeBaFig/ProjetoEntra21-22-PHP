@@ -38,11 +38,7 @@
                             </a>
                         </div>
                         @endforeach
-
-
-
                     </div>
-
                 </section>
             </div>
         </div>
