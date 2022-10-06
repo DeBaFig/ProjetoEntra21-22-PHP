@@ -47,7 +47,7 @@
             <!-- Termos de Uso -->
             <div class="mt-4">
                 <a class="underline text-sm text-blue-600 hover:text-blue-900" href="{{ route('termos') }}">
-                    {{ __('Registrando você aceita as Condições e Termos de
+                Registrando você aceita nossos {{ __('Termos de
                     Uso') }}
                 </a>
                 <input type="checkbox" name="termos" required>
