@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\HomeController;;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -26,23 +27,30 @@ Route::prefix('admin')->group(function () {
 });
 
 
+// Não precisa de autenticação 
 
-Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/contato', [App\Http\Controllers\HomeController::class, 'contact'])->name('contato');
-Route::get('/Sobre', [App\Http\Controllers\HomeController::class, 'about'])->name('sobre');
-Route::get('/SobreBalcao', [App\Http\Controllers\HomeController::class, 'aboutBalcao'])->name('sobre-balcao');
-Route::get('/termos', [App\Http\Controllers\HomeController::class, 'termos'])->name('termos');
+Route::get('/', [
+    HomeController::class, 'index'
+])->name('home');
 
+Route::get('/contato', [
+    HomeController::class, 'contact'
+])->name('contato');
 
+Route::get('/Sobre', [
+    HomeController::class, 'about'
+])->name('sobre');
 
-Route::get('user/add', function () {
-    return view('user.add');
-})->middleware(['auth'])->name('user.add');
+Route::get('/SobreBalcao', [
+    HomeController::class, 'aboutBalcao'
+])->name('sobre-balcao');
 
-Route::post('/user/add', [ProductController::class, 'create'])->middleware(['auth'])->name('product.save');
+Route::get('/termos', [
+    HomeController::class, 'termos'
+])->name('termos');
 
-Route::get('dashboard', function () {
-    return view('user.add');
-})->middleware(['auth'])->name('dashboard');
+Route::get('contato/obrigado', function () {
+    return view('home.obrigado');
+});
 
 require __DIR__ . '/auth.php';
