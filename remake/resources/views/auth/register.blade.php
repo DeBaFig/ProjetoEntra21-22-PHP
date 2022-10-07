@@ -14,21 +14,21 @@
 
             <!-- Name -->
             <div>
-                <x-input-label for="name" :value="__('Name')" />
+                <x-input-label for="name" :value="__('Nome')" />
 
                 <x-text-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus />
             </div>
 
             <!-- Email Address -->
             <div class="mt-4">
-                <x-input-label for="email" :value="__('Email')" />
+                <x-input-label for="email" :value="__('E-mail')" />
 
                 <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required />
             </div>
 
             <!-- Password -->
             <div class="mt-4">
-                <x-input-label for="password" :value="__('Password')" />
+                <x-input-label for="password" :value="__('Senha')" />
 
                 <x-text-input id="password" class="block mt-1 w-full"
                                 type="password"
@@ -38,7 +38,7 @@
 
             <!-- Confirm Password -->
             <div class="mt-4">
-                <x-input-label for="password_confirmation" :value="__('Confirm Password')" />
+                <x-input-label for="password_confirmation" :value="__('Confirmar Senha')" />
 
                 <x-text-input id="password_confirmation" class="block mt-1 w-full"
                                 type="password"
@@ -47,11 +47,11 @@
 
             <div class="flex items-center justify-end mt-4">
                 <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('login') }}">
-                    {{ __('Already registered?') }}
+                    {{ __('Já possui cadastro?') }}
                 </a>
 
                 <x-primary-button class="ml-4">
-                    {{ __('Register') }}
+                    {{ __('Cadastro') }}
                 </x-primary-button>
             </div>
         </form>

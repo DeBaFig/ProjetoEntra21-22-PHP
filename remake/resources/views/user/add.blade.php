@@ -24,7 +24,7 @@
                 <x-text-input id="desc" class="block mt-1 w-full" type="text" name="descricao" />
             </div>
                 <x-primary-button class="ml-4">
-                    {{ __('Register') }}
+                    {{ __('Registrar') }}
                 </x-primary-button>
             </div>
         </form>

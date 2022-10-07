@@ -13,8 +13,8 @@ return [
     |
     */
 
-    'failed' => 'These credentials do not match our records.',
-    'password' => 'The provided password is incorrect.',
-    'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
+    'failed' => 'Os dados fornecidos não correspondem aos nossos registros.',
+    'password' => 'A senha fornecida está incorreta.',
+    'throttle' => 'Muitas tentativas de entrar. Por favor tente novamente em :seconds segundos.',
 
 ];
