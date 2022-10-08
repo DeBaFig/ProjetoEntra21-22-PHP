@@ -11,9 +11,9 @@
                 <div class="p-6 bg-white md:w-1 xl:w-1/2 p-6 " style="margin:0 auto;">
                     <img src="{{ asset('assets/img/contato.png') }}" width="600px">
                     <form class="mt-8 space-y-6" method="POST" action="https://formsubmit.co/balcao.brasil.adm@gmail.com">
+                        @csrf
                         <input type="hidden" name="_next" value="{{ url('contato/obrigado')}}" />
                         <input type="hidden" name="_autoresponse" value="Obrigada por entrar em contato!">
-                        {{ csrf_field() }}
 
                         <div class="-space-y-px rounded-md">
                             @if(!empty($message))

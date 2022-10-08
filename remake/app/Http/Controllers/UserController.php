@@ -8,8 +8,6 @@ use Illuminate\Http\Request;
 use Auth;
 use Hash;
 use Illuminate\Validation\Rules;
-use Illuminate\Support\Facades\Password;
-
 
 class UserController extends Controller
 {
@@ -20,6 +18,7 @@ class UserController extends Controller
      */
     public function index()
     {
+
         $user = auth()->user()->email;
         $viewData = Photo::select('products.title','products.publish_at', 'products.buyer', 'photos.photo_image', 'products.isNew', 'products.max_price', 'products.isNegotiable')
             ->join('products', 'photos.id', '=', 'products.id')
@@ -51,16 +50,6 @@ class UserController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-    }
-
-    /**
      * Display the specified resource.
      *
      * @param  \App\Models\User  $user
@@ -79,14 +68,12 @@ class UserController extends Controller
      */
     public function editPassword()
     {
-        // $user_email = Auth::user()->email;
         $viewData = User::select('password')->where('email', '=', Auth::user()->email)->get();
         return view('user.update_password')->with("viewData", $viewData);
     }
 
     public function updatePassword(Request $request)
     {
-        // dd($request);
         $request->validate([
             'old_password' => 'required',
             'new_password' => ['required', 'confirmed', Rules\Password::defaults()],
@@ -100,6 +87,17 @@ class UserController extends Controller
 
         return back()->with("error", "Senha alterada!");
     }
+
+
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \App\Models\User  $user
+     * @return \Illuminate\Http\Response
+     */
+
     public function edit()
     {
         $user_email = Auth::user()->email;
@@ -132,14 +130,4 @@ class UserController extends Controller
         }
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\User  $user
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(User $user)
-    {
-        //
-    }
 }

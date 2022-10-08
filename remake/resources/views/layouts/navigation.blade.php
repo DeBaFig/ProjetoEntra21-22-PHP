@@ -14,17 +14,17 @@
 
                 @if (Auth::guard('admin')->check())
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('admin.dashboard')">
+                    <x-nav-link :href="route('admin.index')">
                         {{ __('Início') }}
                     </x-nav-link>
                 </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('dashboard')">
+                    <x-nav-link :href="route('admin.products')">
                         {{ __('Gerenciar Anúncios') }}
                     </x-nav-link>
                 </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('dashboard')">
+                    <x-nav-link :href="route('admin.users')">
                         {{ __('Gerenciar Usuários') }}
                     </x-nav-link>
                 </div>
@@ -73,7 +73,6 @@
                         <x-dropdown-link :href="route('user.product')">
                             {{ __('Meus Anúncios') }}
                         </x-dropdown-link>
-                        @endif
                         <x-dropdown-link :href="route('user.edit')">
                             {{ __('Meus Dados') }}
                         </x-dropdown-link>
@@ -87,6 +86,31 @@
                                 {{ __('Log Out') }}
                             </x-dropdown-link>
                         </form>
+                        @elseif(Auth::guard('admin'))
+                        <x-dropdown-link :href="route('admin.products')">
+                            {{ __('Gerenciar Anúncios') }}
+                        </x-dropdown-link>
+                        <x-dropdown-link :href="route('admin.users')">
+                            {{ __('Gerenciar Usuários') }}
+                        </x-dropdown-link>
+                        <x-dropdown-link :href="route('admin.index')">
+                            {{ __('Registar novo Admin') }}
+                        </x-dropdown-link>
+                        <x-dropdown-link :href="route('admin.index')">
+                            {{ __('Alterar Senha') }}
+                        </x-dropdown-link>
+                        <x-dropdown-link :href="route('admin.index')">
+                            {{ __('Alterar Meus Dados') }}
+                        </x-dropdown-link>
+                        <form method="POST" action="{{ route('admin.logout') }}">
+                            @csrf
+                            <x-dropdown-link :href="route('admin.logout')" onclick="event.preventDefault();
+                                                this.closest('form').submit();">
+                                {{ __('Log Out') }}
+                            </x-dropdown-link>
+                        </form>
+                        @endif
+                        
                     </x-slot>
                 </x-dropdown>
             </div>
@@ -118,19 +142,20 @@
                 <div class="font-medium text-sm text-gray-500">{{ Auth::guard('admin')->user()->email }}</div>
                 @endif
             </div>
+
+            @if (Auth::guard('admin')->check())
             <div class="pt-2 pb-3 space-y-1">
-                <x-responsive-nav-link :href="route('user.home')">
+                <x-responsive-nav-link :href="route('admin.index')">
                     {{ __('Início') }}
                 </x-responsive-nav-link>
             </div>
-            @if (Auth::guard('admin')->check())
             <div class="pt-2 pb-3 space-y-1">
-                <x-responsive-nav-link :href="route('dashboard')">
+                <x-responsive-nav-link :href="route('admin.products')">
                     {{ __('Gerenciar Anúncios') }}
                 </x-responsive-nav-link>
             </div>
             <div class="pt-2 pb-3 space-y-1">
-                <x-responsive-nav-link :href="route('dashboard')">
+                <x-responsive-nav-link :href="route('admin.users')">
                     {{ __('Gerenciar Usúarios') }}
                 </x-responsive-nav-link>
             </div>
@@ -142,36 +167,39 @@
                     {{ __('Log Out') }}
                 </x-responsive-nav-link>
             </form>
-        </div>
-        @elseif(Auth::check())
-        <div class="pt-2 pb-3 space-y-1">
-            <x-responsive-nav-link :href="route('user.home')">
-                {{ __('Criar Anúncio') }}
-            </x-responsive-nav-link>
-        </div>
-        <div class="pt-2 pb-3 space-y-1">
-            <x-responsive-nav-link :href="route('user.product')">
-                {{ __('Meus Anúncios') }}
-            </x-responsive-nav-link>
-        </div>
-        <div class="pt-2 pb-3 space-y-1">
-            <x-responsive-nav-link :href="route('user.edit')">
-                {{ __('Meus Dados') }}
-            </x-responsive-nav-link>
-        </div>
-        <form method="POST" action="{{ route('logout') }}">
-            @csrf
+            @elseif(Auth::check())
+            <div class="pt-2 pb-3 space-y-1">
+                <x-responsive-nav-link :href="route('user.home')">
+                    {{ __('Início') }}
+                </x-responsive-nav-link>
+            </div>
+            <div class="pt-2 pb-3 space-y-1">
+                <x-responsive-nav-link :href="route('user.home')">
+                    {{ __('Criar Anúncio') }}
+                </x-responsive-nav-link>
+            </div>
+            <div class="pt-2 pb-3 space-y-1">
+                <x-responsive-nav-link :href="route('user.product')">
+                    {{ __('Meus Anúncios') }}
+                </x-responsive-nav-link>
+            </div>
+            <div class="pt-2 pb-3 space-y-1">
+                <x-responsive-nav-link :href="route('user.edit')">
+                    {{ __('Meus Dados') }}
+                </x-responsive-nav-link>
+            </div>
+            <form method="POST" action="{{ route('logout') }}">
+                @csrf
 
-            <x-responsive-nav-link :href="route('logout')" onclick="event.preventDefault();
+                <x-responsive-nav-link :href="route('logout')" onclick="event.preventDefault();
                                         this.closest('form').submit();">
-                {{ __('Log Out') }}
-            </x-responsive-nav-link>
-        </form>
-    </div>
-    @endif
-    <div class="mt-3 space-y-1">
-        <!-- Authentication -->
+                    {{ __('Log Out') }}
+                </x-responsive-nav-link>
+            </form>
+            @endif
+            <div class="mt-3 space-y-1">
+                <!-- Authentication -->
 
-    </div>
-    </div>
+            </div>
+        </div>
 </nav>

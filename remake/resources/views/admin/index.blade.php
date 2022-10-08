@@ -12,72 +12,39 @@
                     <div class="w-full px-6 py-6 mx-auto">
                         <div class="flex flex-wrap -mx-3">
                             <x-card-admin>
-                                <x-slot name="title">
-                                    Usuários Ativos
-                                </x-slot>
+                                <x-slot name="title">Usuários Ativos</x-slot>
+                                <x-slot name="icon">{{ asset('assets/icon/user-solid.svg') }}</x-slot>
                                 {{ ('AQUI VAI A VARIÁVEL') }}
-                                <x-slot name="icon">
-                                    {{ asset('assets/icon/user-solid.svg') }}
-                                </x-slot>
                             </x-card-admin>
                             <x-card-admin>
-                                <x-slot name="title">
-                                    Anúncios Ativos
-                                </x-slot>
+                                <x-slot name="title">Anúncios Ativos</x-slot>
+                                <x-slot name="icon">{{ asset('assets/icon/bullhorn-solid.svg') }}</x-slot>
                                 {{ ('AQUI VAI A VARIÁVEL') }}
-                                <x-slot name="icon">
-                                    {{ asset('assets/icon/user-solid.svg') }}
-                                </x-slot>
                             </x-card-admin>
                             <x-card-admin>
-                                <x-slot name="title">
-                                    Total de comentários
-                                </x-slot>
+                                <x-slot name="title">Total de comentários</x-slot>
+                                <x-slot name="icon">{{ asset('assets/icon/comments-solid.svg') }}</x-slot>
                                 {{ ('AQUI VAI A VARIÁVEL') }}
-                                <x-slot name="icon">
-                                    {{ asset('assets/icon/user-solid.svg') }}
-                                </x-slot>
                             </x-card-admin>
                             <x-card-admin>
-                                <x-slot name="title">
-                                    Total de Visitantes
-                                </x-slot>
+                                <x-slot name="title">Total de Visitantes</x-slot>
+                                <x-slot name="icon">{{ asset('assets/icon/users-solid.svg') }}</x-slot>
                                 {{ ('AQUI VAI A VARIÁVEL') }}
-                                <x-slot name="icon">
-                                    {{ asset('assets/icon/user-solid.svg') }}
-                                </x-slot>
                             </x-card-admin>
-
                         </div>
-
                     </div>
-                    <div class="flex flex-wrap mt-6 -mx-3 justify-between">
-                        <x-card-admin-link>
-                            <x-slot name="title">
-                                Gerenciar Usuários
-                            </x-slot>
-                            {{ ('AQUI VAI A VARIÁVEL') }}
-                            <x-slot name="link">
-                                {{ ('clique aqui') }}
-                            </x-slot>
+                    <div class="flex flex-wrap mt-6 -mx-3 justify-between aligh-baseline">
+                        <x-card-admin-link :href="route('admin.users')">
+                            <x-slot name="title">Gerenciar Usuários</x-slot>
+                            {{ ('Acesso a edição, aviso, e exclusão de usuários e administradores.') }}
                         </x-card-admin-link>
-                        <x-card-admin-link>
-                            <x-slot name="title">
-                                Adicionar novos Administradores
-                            </x-slot>
-                            {{ ('AQUI VAI A VARIÁVEL') }}
-                            <x-slot name="link">
-                                {{ ('clique aqui') }}
-                            </x-slot>
+                        <x-card-admin-link :href="route('admin.register')">
+                            <x-slot name="title">Adicionar novos Administradores</x-slot>
+                            {{ ('Registo de novos administradores e visualização dos atuais.') }}
                         </x-card-admin-link>
-                        <x-card-admin-link>
-                            <x-slot name="title">
-                                Gerenciar Anúncios
-                            </x-slot>
-                            {{ ('AQUI VAI A VARIÁVEL') }}
-                            <x-slot name="link">
-                                {{ ('clique aqui') }}
-                            </x-slot>
+                        <x-card-admin-link :href="route('admin.products')">
+                            <x-slot name="title">Gerenciar Anúncios</x-slot>
+                            {{ ('Acesso a monitoramento, dados, e exclusão de anúncios.') }}
                         </x-card-admin-link>
                     </div>
                 </div>
