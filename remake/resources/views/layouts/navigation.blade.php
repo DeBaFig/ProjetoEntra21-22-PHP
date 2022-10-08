@@ -11,12 +11,13 @@
                 </div>
 
                 <!-- Navigation Links -->
+
+                @if (Auth::guard('admin')->check())
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('user.home')">
+                    <x-nav-link :href="route('admin.dashboard')">
                         {{ __('Início') }}
                     </x-nav-link>
                 </div>
-                @if (Auth::guard('admin')->check())
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-nav-link :href="route('dashboard')">
                         {{ __('Gerenciar Anúncios') }}
@@ -28,6 +29,11 @@
                     </x-nav-link>
                 </div>
                 @elseif(Auth::check())
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-nav-link :href="route('user.home')">
+                        {{ __('Início') }}
+                    </x-nav-link>
+                </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-nav-link :href="route('user.home')">
                         {{ __('Criar Anúncio') }}
@@ -63,9 +69,11 @@
 
                     <x-slot name="content">
                         <!-- Authentication -->
+                        @if (Auth::check())
                         <x-dropdown-link :href="route('user.product')">
                             {{ __('Meus Anúncios') }}
                         </x-dropdown-link>
+                        @endif
                         <x-dropdown-link :href="route('user.edit')">
                             {{ __('Meus Dados') }}
                         </x-dropdown-link>

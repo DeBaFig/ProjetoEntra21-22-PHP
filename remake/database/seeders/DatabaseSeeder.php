@@ -21,7 +21,8 @@ class DatabaseSeeder extends Seeder
         \App\Models\Photo::factory(40)->create();
         \App\Models\Admin::factory(1)->create([
             'name' => 'Test User',
-            'email' => 'admin@example.com',
+            // 'email' => 'denize.f.bassi@gmail.com',
+            'email' => 'denize.f.aguiar@gmail.com',
         ]);
         \App\Models\Product::factory(10)->create([
             'buyer' => 'denize.f.aguiar@gmail.com',

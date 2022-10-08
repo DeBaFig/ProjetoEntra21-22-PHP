@@ -16,10 +16,13 @@ class AdminController extends Controller
     {
         return view('admin.index');
     }
-
+    public function adminUsers()
+    {
+        return view('admin.index');
+    }
     public function Login(Request $request)
     {
-        // dd($request->all());
+        dd($request->all());
         $check = $request->all();
 
         if (Auth::guard('admin')->attempt(['email' => $check['email'], 'password' => $check['password']])) {
