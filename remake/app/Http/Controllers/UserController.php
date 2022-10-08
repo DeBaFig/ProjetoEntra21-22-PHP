@@ -3,9 +3,12 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use App\Models\Photo;
 use Illuminate\Http\Request;
 use Auth;
+use Hash;
 use Illuminate\Validation\Rules;
+use Illuminate\Support\Facades\Password;
 
 
 class UserController extends Controller
@@ -17,7 +20,14 @@ class UserController extends Controller
      */
     public function index()
     {
-        //
+        $user = auth()->user()->email;
+        $viewData = Photo::select('products.title','products.publish_at', 'products.buyer', 'photos.photo_image', 'products.isNew', 'products.max_price', 'products.isNegotiable')
+            ->join('products', 'photos.id', '=', 'products.id')
+            ->where('isActive', '=', 1)
+            ->where('buyer', '!=', $user)
+            ->orderBy('publish_at')
+            ->paginate(6);
+        return view('user.index')->with("viewData", $viewData );
     }
 
     /**
@@ -27,6 +37,17 @@ class UserController extends Controller
      */
     public function create()
     {
+        $user = auth()->user()->email;
+        $viewData = Photo::select('products.title', 'photos.photo_image', 'products.isNew', 'products.max_price', 'products.isNegotiable')
+            ->join('products', 'photos.id', '=', 'products.id')
+            ->where('isActive', '=', 1)
+            ->where('buyer', '=', $user)
+            ->orderBy('publish_at')
+            ->paginate(6);
+        if ($viewData->count() == 0) {
+            return view('user.product')->with("error", 'Você ainda não tem nenhum anúncio, que tal comprar algo?')->with('viewData', $viewData);
+        }
+        return view('user.product')->with("viewData", $viewData);
     }
 
     /**
@@ -56,6 +77,29 @@ class UserController extends Controller
      * @param  \App\Models\User  $user
      * @return \Illuminate\Http\Response
      */
+    public function editPassword()
+    {
+        // $user_email = Auth::user()->email;
+        $viewData = User::select('password')->where('email', '=', Auth::user()->email)->get();
+        return view('user.update_password')->with("viewData", $viewData);
+    }
+
+    public function updatePassword(Request $request)
+    {
+        // dd($request);
+        $request->validate([
+            'old_password' => 'required',
+            'new_password' => ['required', 'confirmed', Rules\Password::defaults()],
+        ]);
+        if (!Hash::check($request->old_password, auth()->user()->password)) {
+            return back()->with("error", "Senha atual inválida!");
+        }
+        User::whereId(auth()->user()->id)->update([
+            'password' => Hash::make($request->new_password)
+        ]);
+
+        return back()->with("error", "Senha alterada!");
+    }
     public function edit()
     {
         $user_email = Auth::user()->email;
@@ -74,6 +118,7 @@ class UserController extends Controller
     {
         if (Auth::guard('web')->attempt(['email' => $request['email'], 'password' => $request['password']])) {
             $user = User::select('*')->where('email', '=', $request->email)->first();
+            $user->name = $request->name;
             $user->cpf = $request->cpf;
             $user->phone = $request->phone;
             $user->address = $request->address;
@@ -81,9 +126,9 @@ class UserController extends Controller
             $user->facebook = $request->facebook;
             $user->instagram = $request->instagram;
             $user->save();
-            return redirect()->back();
+            return redirect()->back()->with('error', 'Dados atualizados com sucesso');
         } else {
-            return redirect()->back()->with('error', 'Senha não válida');
+            return redirect()->back()->with('error', 'Senha inválida');
         }
     }
 

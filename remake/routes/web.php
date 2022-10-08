@@ -26,9 +26,12 @@ Route::prefix('admin')->group(function () {
     Route::get('/logout', [AdminController::class, 'AdminLogout'])->name('admin.logout')->middleware('admin');
 });
 
-
+Route::get('/user', [UserController::class, 'index'])->middleware(['auth'])->name('user.home');
+Route::post('/user/atualiza/senha/envia', [UserController::class, 'updatePassword'])->middleware(['auth'])->name('user.update.password');
 Route::post('/user/atualiza/envia', [UserController::class, 'update'])->middleware(['auth'])->name('user.update');
 Route::get('/user/atualiza', [UserController::class, 'edit'])->middleware(['auth'])->name('user.edit');
+Route::get('/user/atualiza/senha', [UserController::class, 'editPassword'])->middleware(['auth'])->name('user.edit.password');
+Route::get('/user/anuncios', [UserController::class, 'create'])->middleware(['auth'])->name('user.product');
 
 Route::get('/dashboard', function () {
     return view('user.index');

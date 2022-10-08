@@ -8,10 +8,13 @@ use Auth;
 
 class HomeController extends Controller
 {
-    public function index(Request $request)
+    public function index()
     {
         $viewData = Photo::select('products.title', 'photos.photo_image' ,'products.isNew' , 'products.max_price', 'products.isNegotiable')
-            ->join('products', 'photos.id', '=', 'products.id')->where('isActive', '=', 1)->get();
+            ->join('products', 'photos.id', '=', 'products.id')
+            ->where('isActive', '=', 1)
+            ->orderBy('publish_at')
+            ->paginate(6);
         return view('home.index')->with("viewData", $viewData);
     }
     public function about()
