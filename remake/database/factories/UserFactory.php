@@ -27,6 +27,7 @@ class UserFactory extends Factory
             'address' => $this->faker->regexify('[A-Za-z0-9]{150}'),
             'cep' => $this->faker->word,
             'cpf' => $this->faker->word,
+            'last_login' => $this->faker->date(),
             'facebook' => $this->faker->word,
             'instagram' => $this->faker->word,
             'avatar' => $this->faker->imageUrl(),

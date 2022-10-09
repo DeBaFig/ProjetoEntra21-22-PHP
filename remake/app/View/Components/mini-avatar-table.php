@@ -4,7 +4,7 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class send_warning_cell extends Component
+class mini_avatar_table extends Component
 {
     /**
      * Create a new component instance.
@@ -23,6 +23,6 @@ class send_warning_cell extends Component
      */
     public function render()
     {
-        return view('components.send-warning-cell');
+        return view('components.mini-avatar-table');
     }
 }

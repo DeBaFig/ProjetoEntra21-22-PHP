@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Product;
 use Illuminate\Http\Request;
+use App\Models\User;
 use Auth;
 
 class AdminController extends Controller
@@ -32,10 +34,27 @@ class AdminController extends Controller
         return view('admin.register');
     }
 
+    public function adminUsersShow($id){
+        $viewData = Product::select('*')
+        ->join('users', 'users.id', '=', 'products.user_id')
+        ->where('users.id', '=', $id)
+        ->get();
+        $userData = User::where('id','=', $id)->get();
+        // dd($viewData);
+        return view('admin.user_show')
+        ->with('viewData', $viewData)
+        ->with('user', $userData);
+    }
+
     //Show all users table in a blade allowing edit
     public function adminUsers()
     {
-        return view('admin.users');
+        // $viewData = Product::select('products.id', 'users.name', 'users.isActive', 'users.last_login', 'users.id')
+        // ->join('users', 'products.id', '=', 'users.id')
+        $viewData = User::select('name', 'isActive', 'last_login', 'id')
+            ->withCount('product')
+            ->paginate(6);
+        return view('admin.users')->with('viewData', $viewData);
     }
 
     //Show all products table in a blade allowing edit

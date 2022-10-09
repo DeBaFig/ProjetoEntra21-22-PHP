@@ -4,14 +4,17 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class Sidebar extends Component
+class table_icons extends Component
 {
     /**
      * Create a new component instance.
      *
      * @return void
      */
-  
+    public function __construct()
+    {
+        //
+    }
 
     /**
      * Get the view / contents that represent the component.
@@ -20,6 +23,6 @@ class Sidebar extends Component
      */
     public function render()
     {
-        return view('components.sidebar');
+        return view('components.table-icons');
     }
 }

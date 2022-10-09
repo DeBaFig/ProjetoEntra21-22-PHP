@@ -24,7 +24,7 @@ class ProductFactory extends Factory
     {
         return [
             'title' => $this->faker->sentence(4),
-            'buyer' => $this->faker->safeEmail,
+            'user_id' => $this->faker->numberBetween(0, 20),
             'description' => $this->faker->text,
             'address' => $this->faker->regexify('[A-Za-z0-9]{150}'),
             'reference_link' => $this->faker->word,

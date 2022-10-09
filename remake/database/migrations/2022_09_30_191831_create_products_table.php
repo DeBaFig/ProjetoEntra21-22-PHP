@@ -19,7 +19,7 @@ class CreateProductsTable extends Migration
             $table->string('description', 255)->nullable();
             $table->string('address', 150)->nullable();
             $table->string('reference_link')->nullable();
-            $table->string('buyer');
+            $table->integer('user_id');
             $table->integer('min_price')->nullable();
             $table->integer('max_price')->nullable();
             $table->timestamp('publish_at');

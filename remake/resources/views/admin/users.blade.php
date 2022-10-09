@@ -28,26 +28,34 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <x-table-cell>Teste1</x-table-cell>
-                                                <x-table-cell>Teste1</x-table-cell>
-                                                <x-table-cell>Teste1</x-table-cell>
-                                                <x-table-cell>Teste1</x-table-cell>
-                                                <x-table-cell>Teste1</x-table-cell>
-                                                <x-see-cell :href="route('admin.index')"></x-see-cell>
-                                                <x-edit-cell :href="route('admin.index')"></x-edit-cell>
-                                                <x-send-warning-cell :href="route('admin.index')"></x-send-warning-cell>
-                                                <x-ban-warning-cell :href="route('admin.index')"></x-ban-warning-cell>
+                                                @foreach($viewData as $key => $detalhes)
 
+                                                <tr>
+                                                    <x-mini-avatar-table :scr="$detalhes['avatar']"></x-mini-avatar-table>
+                                                    <x-table-cell>{{ $detalhes['name'] }}</x-table-cell>
+                                                    <x-table-cell>{{ $detalhes['isActive']? 'Sim': 'Não' }}</x-table-cell>
+                                                    <x-table-cell>{{ $detalhes['product_count'] }}</x-table-cell>
+                                                    <x-table-cell>{{ $detalhes['last_login'] }}</x-table-cell>
+                                                    <x-table-icons>{{ $detalhes['id']}}</x-table-icons>
+                                                </tr>
+                                                @endforeach
                                             </tbody>
                                         </table>
+
+                                    </div>
+                                    <div class="my-8 px-9">
+                                        {{ $viewData->links() }}
                                     </div>
                                 </div>
+
                             </div>
+
                         </div>
 
                     </div>
                 </div>
             </div>
         </div>
+
     </div>
 </x-app-layout>

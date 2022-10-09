@@ -27,6 +27,7 @@ return new class extends Migration
             $table->string('instagram')->nullable();
             $table->string('avatar')->nullable();
             $table->tinyInteger('isActive')->default(1);
+            $table->timestamp('last_login')->nullable();
             $table->timestamps();
             $table->rememberToken();
         });

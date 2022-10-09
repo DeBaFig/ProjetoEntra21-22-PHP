@@ -25,18 +25,6 @@ class ProductController extends Controller
      */
     public function create(Request $request)
     {
-        // dd($request);
-        $teste = new Product();
-        $email = Auth::user()->email;
-        $descricao = $request->descricao;
-        $titulo = $request->titulo;
-        echo $email . "<br>";
-        echo $titulo. "<br>";
-        echo $descricao;
-        $teste->description = $descricao;
-        $teste->title = $titulo;
-        $teste->buyer = $email;
-        $teste->save();
     }
 
     /**

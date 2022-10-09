@@ -24,11 +24,5 @@ class DatabaseSeeder extends Seeder
             'email' => 'denize.f.bassi@gmail.com',
             // 'email' => 'denize.f.aguiar@gmail.com',
         ]);
-        \App\Models\Product::factory(10)->create([
-            'buyer' => 'denize.f.aguiar@gmail.com',
-        ]);
-        \App\Models\Product::factory(10)->create([
-            'buyer' => 'denize.f.bassi@gmail.com',
-        ]);
     }
 }

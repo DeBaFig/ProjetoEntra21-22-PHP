@@ -16,5 +16,6 @@ Route::prefix('admin')->group(function () {
         Route::get('/gerencia/products', [AdminController::class, 'adminProducts'])->name('admin.products');
         Route::get('/register', [AdminController::class, 'adminRegister'])->name('admin.register');
         Route::post('/logout', [AdminController::class, 'destroy'])->name('admin.logout');
+        Route::get('/gerencia/user/{id}', [AdminController::class, 'adminUsersShow'])->name("admin.user.show");
     });
 });

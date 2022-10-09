@@ -25,6 +25,15 @@ Route::get('/user/atualiza', [UserController::class, 'edit'])->middleware(['auth
 Route::get('/user/atualiza/senha', [UserController::class, 'editPassword'])->middleware(['auth'])->name('user.edit.password');
 Route::get('/user/anuncios', [UserController::class, 'create'])->middleware(['auth'])->name('user.product');
 
+
+
+
+
+
+
+
+
+
 // Não precisa de autenticação ABOUT/ABOUT-BALCAO/HOME 
 require __DIR__ . '/auth.php';
 

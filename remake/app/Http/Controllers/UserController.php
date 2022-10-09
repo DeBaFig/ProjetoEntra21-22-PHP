@@ -20,10 +20,10 @@ class UserController extends Controller
     {
 
         $user = auth()->user()->email;
-        $viewData = Photo::select('products.title','products.publish_at', 'products.buyer', 'photos.photo_image', 'products.isNew', 'products.max_price', 'products.isNegotiable')
+        $viewData = Photo::select('products.title','products.publish_at', 'products.user_id', 'photos.photo_image', 'products.isNew', 'products.max_price', 'products.isNegotiable')
             ->join('products', 'photos.id', '=', 'products.id')
             ->where('isActive', '=', 1)
-            ->where('buyer', '!=', $user)
+            ->where('user_id', '!=', $user->id)
             ->orderBy('publish_at')
             ->paginate(6);
         return view('user.index')->with("viewData", $viewData );
@@ -40,7 +40,7 @@ class UserController extends Controller
         $viewData = Photo::select('products.title', 'photos.photo_image', 'products.isNew', 'products.max_price', 'products.isNegotiable')
             ->join('products', 'photos.id', '=', 'products.id')
             ->where('isActive', '=', 1)
-            ->where('buyer', '=', $user)
+            ->where('user_id', '=', $user->id)
             ->orderBy('publish_at')
             ->paginate(6);
         if ($viewData->count() == 0) {

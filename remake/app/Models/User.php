@@ -27,6 +27,7 @@ class User extends Authenticatable
         'cpf',
         'facebook',
         'instagram',
+        'last_login',
         'avatar',
         'isActive',
     ];
