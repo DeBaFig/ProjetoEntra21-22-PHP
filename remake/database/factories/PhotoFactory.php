@@ -24,7 +24,7 @@ class PhotoFactory extends Factory
     {
         return [
             'photo_image' => $this->faker->imageUrl(),
-            'product' => $this->faker->numberBetween(1,25),
+            'product' => $this->faker->numberBetween(1,100),
             'create_at' => $this->faker->dateTime(),
         ];
     }

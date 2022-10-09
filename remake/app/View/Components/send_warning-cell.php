@@ -4,7 +4,7 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class card-admin-link extends Component
+class send_warning_cell extends Component
 {
     /**
      * Create a new component instance.
@@ -23,6 +23,6 @@ class card-admin-link extends Component
      */
     public function render()
     {
-        return view('components.card-admin-link');
+        return view('components.send-warning-cell');
     }
 }

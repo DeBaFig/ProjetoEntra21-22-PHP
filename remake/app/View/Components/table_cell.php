@@ -4,7 +4,7 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class card-admin extends Component
+class table_cell extends Component
 {
     /**
      * Create a new component instance.
@@ -23,6 +23,6 @@ class card-admin extends Component
      */
     public function render()
     {
-        return view('components.card-admin');
+        return view('components.table-cell');
     }
 }

@@ -29,7 +29,7 @@ class UserFactory extends Factory
             'cpf' => $this->faker->word,
             'facebook' => $this->faker->word,
             'instagram' => $this->faker->word,
-            'avatar' => $this->faker->word,
+            'avatar' => $this->faker->imageUrl(),
             'isActive' => $this->faker->numberBetween(0,1),
         ];
     }

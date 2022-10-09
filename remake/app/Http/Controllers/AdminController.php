@@ -27,6 +27,10 @@ class AdminController extends Controller
     {
         return view('admin.index');
     }
+    public function adminRegister()
+    {
+        return view('admin.register');
+    }
 
     //Show all users table in a blade allowing edit
     public function adminUsers()
