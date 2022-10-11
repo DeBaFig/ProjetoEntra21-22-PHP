@@ -13,12 +13,12 @@
                 <form action="" method="POST" class="flex self-center">
                     @csrf
                     <x-text-input id="home_search" class="block mt-1 w-full" style="margin:10px ;" placeholder="Procure seu comprador!" type="text" name="home_search" :value="old('home_search')" autofocus />
-                    <x-primary-button class="ml-3 mr-3 " style="margin:10px ;">
+                    <x-primary-button class="ml-3">
                         {{ __('Quero Vender!') }}
                     </x-primary-button>
                 </form>
                 <!-- Navigation Links -->
-                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex" >
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
 
                     <x-nav-link :href="route('contato')" :active="request()->routeIs('contato')">
                         {{ __('Contato') }}

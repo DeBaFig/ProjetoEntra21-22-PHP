@@ -1,0 +1,36 @@
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0 !important;
+    border-top: 0 !important;
+    border-left: 0 !important;
+    border-right: 0 !important;
+    outline: 0 !important;
+}  
+
+textarea {
+    box-sizing: border-box !important;
+    padding-left: 15px !important;
+    border-top: 0 !important;
+    border-left: 0 !important;
+    border-right: 0 !important;
+
+}
+
+.border{
+
+    border-bottom: 1px black solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.formulario{
+    
+    width: 100%;
+    margin: 40px 0;
+    padding: 20px;
+    border-radius: 26px;
+    box-shadow: 0 0 15px #888;
+
+}
+
+
