@@ -11,7 +11,7 @@ class HomeController extends Controller
     public function index(Request $request)
     {
         // $viewData = Product::all();
-        $viewData = Photo::select('products.title', 'photos.photo_image' ,'products.isNew' , 'products.max_price', 'products.isNegotiable')
+        $viewData = Photo::select('products.id', 'products.title', 'photos.photo_image' ,'products.isNew' , 'products.max_price', 'products.isNegotiable')
             ->join('products', 'photos.id', '=', 'products.id')->where('isActive', '=', 1)->get();
         return view('home.index')->with("viewData", $viewData);
     }

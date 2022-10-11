@@ -3,7 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ProductController;
-use App\Http\Controllers\HomeController;;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\SiteController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -52,5 +53,15 @@ Route::get('/termos', [
 Route::get('contato/obrigado', function () {
     return view('home.obrigado');
 });
+
+// Route::get('/home/{id}','ProductController@detalhes');
+
+Route::get('/home/detalhes/{id}', [
+    ProductController::class, 'detalhes'
+])->name('detalhes');
+
+// Route::get('home/detalhes/', function () {
+//     return view('produtos.detalhes');
+// });
 
 require __DIR__ . '/auth.php';
