@@ -129,12 +129,6 @@ O [Balcão Brasil]() foi idealizado para ter uma opção ainda mais ampla quando
 [![Gmail Badge](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:jennifer_lye@hotmail.com)
 [![Whatsapp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://whatsa.me/5547992595122)  
 
-[**Lucas**](https://github.com/PassosLucasB)  
-<img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/64398756?v=4" width="100px;" alt=""/>
-[![Linkedin Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lucas-bernardelli-dos-passos-a74242174/)
-[![Gmail Badge](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:passosl@outlook.com)
-[![Whatsapp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://whatsa.me/5547992273037)
-
 [**Paula**](https://github.com/PaulaKinder)  
 <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/103958106?v=4" width="100px;" alt=""/>
 [![Linkedin Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/paula-eduarda-silva)
