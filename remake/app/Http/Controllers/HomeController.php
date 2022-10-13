@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Photo;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Auth;
 
@@ -10,11 +11,11 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $viewData = Photo::select('products.title', 'photos.photo_image' ,'products.isNew' , 'products.max_price', 'products.isNegotiable')
+        $viewData = Photo::select('products.title', 'photos.photo_image', 'products.isNew', 'products.max_price', 'products.isNegotiable')
             ->join('products', 'photos.id', '=', 'products.id')
             ->where('isActive', '=', 1)
             ->orderBy('publish_at')
-            ->paginate(6);
+            ->paginate(15);
         return view('home.index')->with("viewData", $viewData);
     }
     public function about()
@@ -40,5 +41,9 @@ class HomeController extends Controller
     public function contact()
     {
         return view('home.contact');
+    }
+    public function termos()
+    {
+        return view('home.termos');
     }
 }

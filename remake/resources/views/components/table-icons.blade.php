@@ -1,5 +1,6 @@
+
 @php
-$item_id = $slot 
+$item_id = $slot
 @endphp
 <x-table-cell>
     <a href="{{ route('admin.user.show', ['id'=> $item_id] ) }}" >

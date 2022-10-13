@@ -12,6 +12,7 @@ class AdminController extends Controller
     //login blade only for admin 
     public function index()
     {
+
         return view('admin.login');
     }
     //login logic using the middleware('admin') 
@@ -27,30 +28,32 @@ class AdminController extends Controller
     //after login blade only for admin showing some data 
     public function adminHome()
     {
-        return view('admin.index');
+        $totalUsers = User::where('isActive', '=', 1)->count();
+        $totalProducts = Product::where('isActive', '=', 1)->count();
+        return view('admin.index')
+            ->with('totalUsers', $totalUsers)
+            ->with('totalProducts', $totalProducts);
     }
     public function adminRegister()
     {
         return view('admin.register');
     }
 
-    public function adminUsersShow($id){
+    public function adminUsersShow($id)
+    {
         $viewData = Product::select('*')
-        ->join('users', 'users.id', '=', 'products.user_id')
-        ->where('users.id', '=', $id)
-        ->get();
-        $userData = User::where('id','=', $id)->get();
-        // dd($viewData);
+            ->join('users', 'users.id', '=', 'products.user_id')
+            ->where('users.id', '=', $id)
+            ->get();
+        $userData = User::where('id', '=', $id)->get();
         return view('admin.user_show')
-        ->with('viewData', $viewData)
-        ->with('user', $userData);
+            ->with('viewData', $viewData)
+            ->with('user', $userData);
     }
 
     //Show all users table in a blade allowing edit
     public function adminUsers()
     {
-        // $viewData = Product::select('products.id', 'users.name', 'users.isActive', 'users.last_login', 'users.id')
-        // ->join('users', 'products.id', '=', 'users.id')
         $viewData = User::select('name', 'isActive', 'last_login', 'id')
             ->withCount('product')
             ->paginate(6);
@@ -60,7 +63,22 @@ class AdminController extends Controller
     //Show all products table in a blade allowing edit
     public function adminProducts()
     {
-        return view('admin.products');
+
+        $viewData = Product::select(
+            'products.title',
+            'products.publish_at',
+            'products.quantity',
+            'products.isNew',
+            'products.isNegotiable',
+            'products.isActive',
+            'users.name',
+            'users.email'
+        )
+            ->join('users', 'users.id', '=', 'products.user_id')
+            ->where('products.id', '<', 30)
+            ->paginate(10);
+            // dd($viewData);  
+        return view('admin.products')->with('viewData', $viewData);
     }
 
     //Admin logout 

@@ -18,8 +18,7 @@ class UserController extends Controller
      */
     public function index()
     {
-
-        $user = auth()->user()->email;
+        $user = auth()->user();
         $viewData = Photo::select('products.title','products.publish_at', 'products.user_id', 'photos.photo_image', 'products.isNew', 'products.max_price', 'products.isNegotiable')
             ->join('products', 'photos.id', '=', 'products.id')
             ->where('isActive', '=', 1)
@@ -36,11 +35,11 @@ class UserController extends Controller
      */
     public function create()
     {
-        $user = auth()->user()->email;
+        $user = auth()->user();
         $viewData = Photo::select('products.title', 'photos.photo_image', 'products.isNew', 'products.max_price', 'products.isNegotiable')
             ->join('products', 'photos.id', '=', 'products.id')
             ->where('isActive', '=', 1)
-            ->where('user_id', '=', $user->id)
+            ->where('products.user_id', '=', $user->id)
             ->orderBy('publish_at')
             ->paginate(6);
         if ($viewData->count() == 0) {

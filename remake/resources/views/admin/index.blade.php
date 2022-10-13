@@ -14,12 +14,12 @@
                             <x-card-admin>
                                 <x-slot name="title">Usuários Ativos</x-slot>
                                 <x-slot name="icon">{{ asset('assets/icon/user-solid.svg') }}</x-slot>
-                                {{ ('AQUI VAI A VARIÁVEL') }}
+                                {{ $totalUsers }}
                             </x-card-admin>
                             <x-card-admin>
                                 <x-slot name="title">Anúncios Ativos</x-slot>
                                 <x-slot name="icon">{{ asset('assets/icon/bullhorn-solid.svg') }}</x-slot>
-                                {{ ('AQUI VAI A VARIÁVEL') }}
+                                {{ $totalProducts }}
                             </x-card-admin>
                             <x-card-admin>
                                 <x-slot name="title">Total de comentários</x-slot>

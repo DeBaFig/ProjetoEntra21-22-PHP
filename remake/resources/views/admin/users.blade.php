@@ -16,7 +16,6 @@
                                         <table class="items-center w-full bg-transparent border-collapse">
                                             <thead>
                                                 <tr>
-                                                    <x-table-header>Avatar</x-table-header>
                                                     <x-table-header>Nome</x-table-header>
                                                     <x-table-header>Status</x-table-header>
                                                     <x-table-header>Nº Anúncios</x-table-header>
@@ -29,14 +28,12 @@
                                             </thead>
                                             <tbody>
                                                 @foreach($viewData as $key => $detalhes)
-
                                                 <tr>
-                                                    <x-mini-avatar-table :scr="$detalhes['avatar']"></x-mini-avatar-table>
                                                     <x-table-cell>{{ $detalhes['name'] }}</x-table-cell>
                                                     <x-table-cell>{{ $detalhes['isActive']? 'Sim': 'Não' }}</x-table-cell>
                                                     <x-table-cell>{{ $detalhes['product_count'] }}</x-table-cell>
                                                     <x-table-cell>{{ $detalhes['last_login'] }}</x-table-cell>
-                                                    <x-table-icons>{{ $detalhes['id']}}</x-table-icons>
+                                                    <x-table-icons>{{ $detalhes['id']  }}</x-table-icons>
                                                 </tr>
                                                 @endforeach
                                             </tbody>

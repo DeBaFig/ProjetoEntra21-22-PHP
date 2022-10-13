@@ -39,7 +39,7 @@
                     @endforeach
                 </div>
                 <div class="my-8 px-9">
-                    {{ $viewData->links() }}
+                {{ $viewData->links() }}
                 </div>
             </div>
         </div>

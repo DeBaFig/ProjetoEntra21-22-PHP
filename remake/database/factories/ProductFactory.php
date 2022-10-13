@@ -30,7 +30,7 @@ class ProductFactory extends Factory
             'reference_link' => $this->faker->word,
             'min_price' => $this->faker->numberBetween(0, 10000),
             'max_price' => $this->faker->numberBetween(0, 10000),
-            'publish_at' => $this->faker->dateTime(),
+            'publish_at' => $this->faker->date(),
             'quantity' => $this->faker->numberBetween(0, 10000),
             'isNew' => $this->faker->numberBetween(0,1),
             'isNegotiable' => $this->faker->numberBetween(0,1),
