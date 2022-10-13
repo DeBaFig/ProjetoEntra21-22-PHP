@@ -97,7 +97,6 @@ class ProductController extends Controller
 
     public function detalhes($id)
     {
-        echo "<script> alert('entrou em detalhes') </script>";
         $product = Product::findOrFail($id);
         return view('home.detalhes', ['product' => $product]);
     }
