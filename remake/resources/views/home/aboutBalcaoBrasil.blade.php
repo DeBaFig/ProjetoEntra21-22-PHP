@@ -1,6 +1,6 @@
 <x-guest-layout>
-<div class="bg-blue-400">
-  <div class="bg-gradient-to-r from-sky-200">
+<!-- <div class="bg-green-400"> -->
+  <!-- <div class="bg-gradient-to-r from-sky-200"> -->
     <section class="text-gray-600 body-font">
         <div class="container px-5 py-24 mx-auto flex flex-wrap">
           <div class="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">

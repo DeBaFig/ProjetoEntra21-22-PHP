@@ -24,16 +24,17 @@ class ProductFactory extends Factory
     {
         return [
             'title' => $this->faker->sentence(4),
+            'buyer' => $this->faker->safeEmail,
             'description' => $this->faker->text,
             'address' => $this->faker->regexify('[A-Za-z0-9]{150}'),
             'reference_link' => $this->faker->word,
-            'min_price' => $this->faker->numberBetween(-10000, 10000),
-            'max_price' => $this->faker->numberBetween(-10000, 10000),
+            'min_price' => $this->faker->numberBetween(0, 10000),
+            'max_price' => $this->faker->numberBetween(0, 10000),
             'publish_at' => $this->faker->dateTime(),
-            'quantity' => $this->faker->numberBetween(-10000, 10000),
-            'isNew' => $this->faker->numberBetween(-8, 8),
-            'isNegotiable' => $this->faker->numberBetween(-8, 8),
-            'isActive' => $this->faker->numberBetween(-8, 8),
+            'quantity' => $this->faker->numberBetween(0, 10000),
+            'isNew' => $this->faker->numberBetween(0,1),
+            'isNegotiable' => $this->faker->numberBetween(0,1),
+            'isActive' => $this->faker->numberBetween(0,1),
         ];
     }
 }

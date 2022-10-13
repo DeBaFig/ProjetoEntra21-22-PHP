@@ -39,14 +39,7 @@ class Product extends Model
         'isNew' => 'integer',
         'isNegotiable' => 'integer',
         'isActive' => 'integer',
-        'buyer'=> 'string',
-
     ];
-
-    public function photos()
-    {
-        return $this->hasMany(Photo::class);
-    }
 
     public function user()
     {

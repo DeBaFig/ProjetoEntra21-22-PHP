@@ -2,7 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
-use App\Http\Controllers\ProductController;
+use App\Http\Controllers\HomeController;;
+use App\Http\Controllers\UserController;;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -25,24 +26,41 @@ Route::prefix('admin')->group(function () {
     Route::get('/logout', [AdminController::class, 'AdminLogout'])->name('admin.logout')->middleware('admin');
 });
 
+Route::get('/user', [UserController::class, 'index'])->middleware(['auth'])->name('user.home');
+Route::post('/user/atualiza/senha/envia', [UserController::class, 'updatePassword'])->middleware(['auth'])->name('user.update.password');
+Route::post('/user/atualiza/envia', [UserController::class, 'update'])->middleware(['auth'])->name('user.update');
+Route::get('/user/atualiza', [UserController::class, 'edit'])->middleware(['auth'])->name('user.edit');
+Route::get('/user/atualiza/senha', [UserController::class, 'editPassword'])->middleware(['auth'])->name('user.edit.password');
+Route::get('/user/anuncios', [UserController::class, 'create'])->middleware(['auth'])->name('user.product');
 
-
-Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/contato', [App\Http\Controllers\HomeController::class, 'contact'])->name('contato');
-Route::get('/Sobre', [App\Http\Controllers\HomeController::class, 'about'])->name('sobre');
-Route::get('/SobreBalcao', [App\Http\Controllers\HomeController::class, 'aboutBalcao'])->name('sobre-balcao');
-
-
-
-
-Route::get('user/add', function () {
-    return view('user.add');
-})->middleware(['auth'])->name('user.add');
-
-Route::post('/user/add', [ProductController::class, 'create'])->middleware(['auth'])->name('product.save');
-
-Route::get('dashboard', function () {
-    return view('user.add');
+Route::get('/dashboard', function () {
+    return view('user.index');
 })->middleware(['auth'])->name('dashboard');
+
+// Não precisa de autenticação 
+
+Route::get('/', [
+    HomeController::class, 'index'
+])->name('home');
+
+Route::get('/contato', [
+    HomeController::class, 'contact'
+])->name('contato');
+
+Route::get('/Sobre', [
+    HomeController::class, 'about'
+])->name('sobre');
+
+Route::get('/SobreBalcao', [
+    HomeController::class, 'aboutBalcao'
+])->name('sobre-balcao');
+
+Route::get('/termos', [
+    HomeController::class, 'termos'
+])->name('termos');
+
+Route::get('contato/obrigado', function () {
+    return view('home.obrigado');
+});
 
 require __DIR__ . '/auth.php';

@@ -12,50 +12,30 @@
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('dashboard')"  >
+                    <x-nav-link :href="route('user.home')">
                         {{ __('Início') }}
-                    </x-nav-link>
-                </div>
-                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('dashboard')"  >
-                        {{ __('Sobre Nós') }}
-                    </x-nav-link>
-                </div>
-                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('dashboard')"  >
-                        {{ __('Sobre Balcão Brasil') }}
-                    </x-nav-link>
-                </div>
-                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('dashboard')"  >
-                        {{ __('Contato') }}
                     </x-nav-link>
                 </div>
                 @if (Auth::guard('admin')->check())
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('dashboard')"  >
+                    <x-nav-link :href="route('dashboard')">
                         {{ __('Gerenciar Anúncios') }}
                     </x-nav-link>
                 </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('dashboard')"  >
+                    <x-nav-link :href="route('dashboard')">
                         {{ __('Gerenciar Usuários') }}
                     </x-nav-link>
                 </div>
                 @elseif(Auth::check())
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('dashboard')"  >
+                    <x-nav-link :href="route('user.home')">
                         {{ __('Criar Anúncio') }}
                     </x-nav-link>
                 </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('dashboard')"  >
-                        {{ __('Ver Anúncios') }}
-                    </x-nav-link>
-                </div>
-                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('dashboard')"  >
-                        {{ __('Meus Dados') }}
+                    <x-nav-link :href="route('user.product')">
+                        {{ __('Meus Anúncios') }}
                     </x-nav-link>
                 </div>
                 @endif
@@ -83,12 +63,17 @@
 
                     <x-slot name="content">
                         <!-- Authentication -->
-                        <x-dropdown-link :href="route('home')">
-                            {{ __('Anúncio') }}
+                        <x-dropdown-link :href="route('user.product')">
+                            {{ __('Meus Anúncios') }}
+                        </x-dropdown-link>
+                        <x-dropdown-link :href="route('user.edit')">
+                            {{ __('Meus Dados') }}
+                        </x-dropdown-link>
+                        <x-dropdown-link :href="route('user.edit.password')">
+                            {{ __('Alterar Senha') }}
                         </x-dropdown-link>
                         <form method="POST" action="{{ route('logout') }}">
                             @csrf
-
                             <x-dropdown-link :href="route('logout')" onclick="event.preventDefault();
                                                 this.closest('form').submit();">
                                 {{ __('Log Out') }}
@@ -126,74 +111,59 @@
                 @endif
             </div>
             <div class="pt-2 pb-3 space-y-1">
-                <x-responsive-nav-link :href="route('dashboard')"  >
+                <x-responsive-nav-link :href="route('user.home')">
                     {{ __('Início') }}
-                </x-responsive-nav-link>
-            </div>
-            <div class="pt-2 pb-3 space-y-1">
-                <x-responsive-nav-link :href="route('dashboard')"  >
-                    {{ __('Sobre Nós') }}
-                </x-responsive-nav-link>
-            </div>
-            <div class="pt-2 pb-3 space-y-1">
-                <x-responsive-nav-link :href="route('dashboard')"  >
-                    {{ __('Sobre Balcão Brasil') }}
-                </x-responsive-nav-link>
-            </div>
-            <div class="pt-2 pb-3 space-y-1">
-                <x-responsive-nav-link :href="route('dashboard')"  >
-                    {{ __('Contato') }}
                 </x-responsive-nav-link>
             </div>
             @if (Auth::guard('admin')->check())
             <div class="pt-2 pb-3 space-y-1">
-                <x-responsive-nav-link :href="route('dashboard')"  >
+                <x-responsive-nav-link :href="route('dashboard')">
                     {{ __('Gerenciar Anúncios') }}
                 </x-responsive-nav-link>
             </div>
             <div class="pt-2 pb-3 space-y-1">
-                <x-responsive-nav-link :href="route('dashboard')"  >
+                <x-responsive-nav-link :href="route('dashboard')">
                     {{ __('Gerenciar Usúarios') }}
                 </x-responsive-nav-link>
             </div>
             <form method="POST" action="{{ route('admin.logout') }}">
-                    @csrf
+                @csrf
 
-                    <x-responsive-nav-link :href="route('admin.logout')" onclick="event.preventDefault();
+                <x-responsive-nav-link :href="route('admin.logout')" onclick="event.preventDefault();
                                         this.closest('form').submit();">
-                        {{ __('Log Out') }}
-                    </x-responsive-nav-link>
-                </form>
-            </div>
-                @elseif(Auth::check())
-                <div class="pt-2 pb-3 space-y-1">
-                <x-responsive-nav-link :href="route('dashboard')"  >
-                    {{ __('Criar Anúncio') }}
+                    {{ __('Log Out') }}
                 </x-responsive-nav-link>
-            </div>
-            <div class="pt-2 pb-3 space-y-1">
-                <x-responsive-nav-link :href="route('dashboard')"  >
-                    {{ __('Ver Anúncios') }}
-                </x-responsive-nav-link>
-            </div>
-            <div class="pt-2 pb-3 space-y-1">
-                <x-responsive-nav-link :href="route('dashboard')"  >
-                    {{ __('Meus Dados') }}
-                </x-responsive-nav-link>
-            </div>
-            <form method="POST" action="{{ route('logout') }}">
-                    @csrf
-
-                    <x-responsive-nav-link :href="route('logout')" onclick="event.preventDefault();
-                                        this.closest('form').submit();">
-                        {{ __('Log Out') }}
-                    </x-responsive-nav-link>
-                </form>
-            </div>
-                @endif
-            <div class="mt-3 space-y-1">
-                <!-- Authentication -->
-                
+            </form>
         </div>
+        @elseif(Auth::check())
+        <div class="pt-2 pb-3 space-y-1">
+            <x-responsive-nav-link :href="route('user.home')">
+                {{ __('Criar Anúncio') }}
+            </x-responsive-nav-link>
+        </div>
+        <div class="pt-2 pb-3 space-y-1">
+            <x-responsive-nav-link :href="route('user.product')">
+                {{ __('Meus Anúncios') }}
+            </x-responsive-nav-link>
+        </div>
+        <div class="pt-2 pb-3 space-y-1">
+            <x-responsive-nav-link :href="route('user.edit')">
+                {{ __('Meus Dados') }}
+            </x-responsive-nav-link>
+        </div>
+        <form method="POST" action="{{ route('logout') }}">
+            @csrf
+
+            <x-responsive-nav-link :href="route('logout')" onclick="event.preventDefault();
+                                        this.closest('form').submit();">
+                {{ __('Log Out') }}
+            </x-responsive-nav-link>
+        </form>
+    </div>
+    @endif
+    <div class="mt-3 space-y-1">
+        <!-- Authentication -->
+
+    </div>
     </div>
 </nav>

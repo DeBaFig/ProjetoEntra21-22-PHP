@@ -1,26 +1,33 @@
 <x-guest-layout>
-    <x-auth-card>
-        <x-slot name="logo">
-            <a href="/">
-                <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
-            </a>
-        </x-slot>
 
-        <!-- Session Status -->
-        <x-auth-session-status class="mb-4" :status="session('status')" />
+    <x-slot name="header">
+        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+            {{ __('Contato') }}
+        </h2>
+    </x-slot>
 
-        <!-- Validation Errors -->
-        <x-auth-validation-errors class="mb-4" :errors="$errors" />
+    <!-- Session Status -->
+    <x-auth-session-status class="mb-4" :status="session('status')" />
 
-        <form method="POST" action="{{ route('login') }}">
-            @csrf
+    <!-- Validation Errors -->
+    <x-auth-validation-errors class="mb-4" :errors="$errors" />
+
+    <div class="py-0">
+        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            <div class="bg-white sm:rounded-lg p-6 md:w-1/2 lg:w-1/2 xl:w-1/2" style="margin:0 auto;">
+
+
+                <fieldset class="formulario">
+                    <img src="{{ asset('assets/img/login.png') }}">
+                    <form class="mt-8 space-y-6" method="POST" action="{{ route('login') }}">
+                        @csrf
 
             <!-- Email Address -->
             <div>
                 <x-input-label for="email" :value="__('E-mail')" />
 
-                <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus />
-            </div>
+                            <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" placeholder="Digite seu e-mail" required autofocus />
+                        </div>
 
             <!-- Password -->
             <div class="mt-4">

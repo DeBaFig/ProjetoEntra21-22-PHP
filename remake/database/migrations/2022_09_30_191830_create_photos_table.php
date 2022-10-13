@@ -15,7 +15,8 @@ class CreatePhotosTable extends Migration
     {
         Schema::create('photos', function (Blueprint $table) {
             $table->id();
-            $table->string('photo_image');
+            $table->string('photo_image')->default('https://thumbs.dreamstime.com/z/baby-care-objects-12805326.jpg');
+            $table->integer('product');
             $table->timestamp('create_at');
             $table->timestamps();
         });
