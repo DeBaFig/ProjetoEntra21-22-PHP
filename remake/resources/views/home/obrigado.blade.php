@@ -14,7 +14,7 @@
                         <p1>O quanto antes estaremos dando um retono!</p> <br>
                             <p>Volte sempre,</p> <br>
                             <p>Equipe Balcão Brasil,</p> <br>
-                            <p> "Onde o vendendor me enconta!" </p><br>
+                            <p> "Onde o vendedor me encontra!" </p><br>
                             <x-primary-button class="my-5">
                                 <a href="{{ route('home')}}">{{ __('Voltar') }}</a>
                             </x-primary-button>

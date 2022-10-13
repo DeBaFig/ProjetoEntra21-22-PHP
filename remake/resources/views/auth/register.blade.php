@@ -57,7 +57,6 @@
                             <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('login') }}">
                                 {{ __('Já tem cadastro?') }}
                             </a>
-
                             <x-primary-button class="ml-4">
                                 {{ __('Cadastrar') }}
                             </x-primary-button>

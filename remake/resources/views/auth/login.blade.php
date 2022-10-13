@@ -32,29 +32,31 @@
                         <!-- Password -->
                         <div class="mt-4">
                             <x-input-label for="password" :value="__('')" />
-
                             <x-text-input id="password" class="block mt-1 w-full" type="password" name="password" required placeholder="Digite sua senha" autocomplete="current-password" />
                         </div>
-
+                      
                         <!-- Remember Me -->
                         <div class="block mt-4">
                             <label for="remember_me" class="inline-flex items-center">
-                                <input id="remember_me" type="checkbox" class="rounded border-gray-300 text-indigo-600 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" name="remember">
+                                <input id="remember_me" type="checkbox" class="w-4 h-4 text-green-600 bg-gray-100 rounded border-gray-300 focus:ring-green-500 dark:focus:ring-green-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600 " name="remember">
                                 <span class="ml-2 text-sm text-gray-600">{{ __('Lembrar Senha') }}</span>
                             </label>
                         </div>
 
-                        <div class="flex items-center justify-end mt-4">
+                        <div class="link">
                             @if (Route::has('password.request'))
                             <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('password.request') }}">
-                                {{ __('Esqueceu sua senha?') }}
+                                {{ __('Esqueceu sua senha?')}}
                             </a>
-                            @endif
-
-                            <x-primary-button class="ml-3">
+                            @endif 
+                            <a class="underline text-sm text-gray-600 hover:text-gray-900 " href="{{ route('register') }}">
+                                {{ __('Ainda não se cadastrou?') }}
+                                       
+                            </a>
+                        </div>
+                        <x-primary-button class="button">
                                 {{ __('Entrar') }}
                             </x-primary-button>
-                        </div>
                     </form>
                 </fieldset>
             </div>

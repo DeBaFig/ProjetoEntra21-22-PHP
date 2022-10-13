@@ -4,11 +4,10 @@
             {{ __('Contato') }}
         </h2>
     </x-slot>
-
-    <div class="py-0 text-center">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+        <div class="py-0 text-center">
+                <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white sm:rounded-lg p-6 md:w-1/2 lg:w-1/2 xl:w-1/2" style="margin:0 auto;">
-                <fieldset class="formulario">
+                           <fieldset class="formulario">
                     <img src="{{ asset('assets/img/contato.png') }}" width="600px">
                     <form class="mt-8 space-y-6" method="POST" action="https://formsubmit.co/balcao.brasil.adm@gmail.com">
                         <input type="hidden" name="_next" value="{{ url('contato/obrigado')}}" />

@@ -33,4 +33,22 @@ textarea {
 
 }
 
+.link{
+    display: flex;
+    flex-direction: column;
+}
 
+.imagemhome{
+    position: absolute;
+  width: 120px;
+  top: 0px;  
+  bottom: 0px;
+  left: 0px;
+
+}
+
+.button{
+    left: 50%!important;
+   right: 50%!important;
+
+ }
