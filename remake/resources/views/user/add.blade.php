@@ -11,25 +11,26 @@
                 <div class="p-6 bg-white border-b border-gray-200">
                     <x-auth-validation-errors class="mb-4" :errors="$errors" />
                     <form method="POST" action="{{ route('product.save') }}">
-            @csrf
+                        @csrf
 
-            <!-- Name -->
-            <div>
-                <x-input-label for="titulo" :value="__('Titulo')" />
+                        <!-- Name -->
+                        <div>
+                            <x-input-label for="titulo" :value="__('Titulo')" />
 
-                <x-text-input id="titulo" class="block mt-1 w-full" type="text" name="titulo" />
-            </div><div>
-                <x-input-label for="desc" :value="__('desc')" />
+                            <x-text-input id="titulo" class="block mt-1 w-full" type="text" name="titulo" />
+                        </div>
+                        <div>
+                            <x-input-label for="desc" :value="__('desc')" />
 
-                <x-text-input id="desc" class="block mt-1 w-full" type="text" name="descricao" />
-            </div>
-                <x-primary-button class="ml-4">
-                    {{ __('Registrar') }}
-                </x-primary-button>
-            </div>
-        </form>
+                            <x-text-input id="desc" class="block mt-1 w-full" type="text" name="descricao" />
+                        </div>
+                        <x-primary-button class="ml-4">
+                            {{ __('Registrar') }}
+                        </x-primary-button>
                 </div>
+                </form>
             </div>
         </div>
+    </div>
     </div>
 </x-app-layout>

@@ -18,7 +18,7 @@ class UserController extends Controller
      */
     public function index()
     {
-        $user = auth()->user();
+        $user = Auth::user();
         $viewData = Photo::select('products.title','products.publish_at', 'products.user_id', 'photos.photo_image', 'products.isNew', 'products.max_price', 'products.isNegotiable')
             ->join('products', 'photos.id', '=', 'products.id')
             ->where('isActive', '=', 1)
