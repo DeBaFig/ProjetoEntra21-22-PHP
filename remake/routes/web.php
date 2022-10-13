@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\AdminController;
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\UserController;;
 /*
 |--------------------------------------------------------------------------
@@ -15,8 +15,7 @@ use App\Http\Controllers\UserController;;
 */
 
 
-
-
+// Admin Routes
 
 Route::get('/user', [UserController::class, 'index'])->middleware(['auth'])->name('user.home');
 Route::post('/user/atualiza/senha/envia', [UserController::class, 'updatePassword'])->middleware(['auth'])->name('user.update.password');
@@ -28,8 +27,9 @@ Route::get('/user/anuncios', [UserController::class, 'create'])->middleware(['au
 
 
 
-
-
+Route::get('/home/detalhes/{id}', [
+    ProductController::class, 'detalhes'
+])->name('detalhes');
 
 
 

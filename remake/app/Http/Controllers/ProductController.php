@@ -44,10 +44,10 @@ class ProductController extends Controller
      * @param  \App\Models\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function show(Product $product)
-    {
-        //
-    }
+    // public function show(Product $product)
+    // {
+    //     //
+    // }
 
     /**
      * Show the form for editing the specified resource.
@@ -82,4 +82,12 @@ class ProductController extends Controller
     {
         //
     }
+
+    public function detalhes($id)
+    {
+        $product = Product::findOrFail($id);
+        return view('home.detalhes', ['product' => $product]);
+    }
+
+    
 }

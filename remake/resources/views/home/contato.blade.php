@@ -1,26 +1,13 @@
-<!-- <!doctype html>
-<html>
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  @vite('resources/css/app.css')
-</head> -->
 <x-guest-layout>
   <x-auth-card>
     <x-slot name="logo">
       <a href="/">
       </a>
     </x-slot>
-
-    <!-- <body> -->
-
-    <!--navbar ou div -->
-
     <img src="{{ asset('assets/img/contato.png') }}" width="600px">
     <form class="mt-8 space-y-6" method="POST" action="https://formsubmit.co/balcao.brasil.adm@gmail.com">
       @csrf
-      <input type="hidden" name="_next" value="http://127.0.0.1:8000/obrigado" />
+      <input type="hidden" name="_next" value="{{ route('obrigado')}}" />
 
 
       <div class="-space-y-px rounded-md shadow-sm">
@@ -54,11 +41,5 @@
       </div>
     </form>
 
-    </div>
-    </div>
-
-    <!-- </body> -->
-    <!-- 
-</html> -->
   </x-auth-card>
 </x-guest-layout>

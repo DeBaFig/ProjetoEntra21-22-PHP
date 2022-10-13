@@ -48,7 +48,7 @@ Route::middleware('guest')->group(function () {
 
     Route::get('contato/obrigado', function () {
         return view('home.obrigado');
-    });
+    })->name('obrigado');
 });
 
 Route::middleware('auth')->group(function () {
