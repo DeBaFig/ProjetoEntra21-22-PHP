@@ -34,7 +34,7 @@
         </svg>
         <span class="ml-3 text-xl">Balcão Brasil</span>
       </a>
-      <p class="mt-2 text-sm text-gray-500">Desde 2022, agrandando a clientela!</p>
+      <p class="mt-2 text-sm text-gray-500">Desde 2022, agradando a clientela!</p>
     </div>
     <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
       <div class="lg:w-1/4 md:w-1/2 w-full px-4">
@@ -44,15 +44,15 @@
             <a class="text-gray-600 hover:text-gray-800" href="{{ route('home') }}">Página Inicial</a>
           </li>
           <li>
-            <a class="text-gray-600 hover:text-gray-800" href="{{ route('sobre') }}" >Sobre os fundadores</a>
+            <a class="text-gray-600 hover:text-gray-800" href="{{ route('sobre') }}">Sobre Nós</a>
           </li>
           <li>
             <a class="text-gray-600 hover:text-gray-800" href="{{ route('sobre-balcao') }}">Sobre o Balcão Brasil</a>
           </li>
           <li>
-            <a class="text-gray-600 hover:text-gray-800" href="{{ route('contato') }}">Entre em contato</a>
+            <a class="text-gray-600 hover:text-gray-800" href="{{ route('contato') }}">Entre em contato conosco!</a>
           </li>
         </nav>
       </div>
-      
+</footer>
 </html>
