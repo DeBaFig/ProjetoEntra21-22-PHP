@@ -54,14 +54,11 @@ Route::get('contato/obrigado', function () {
     return view('home.obrigado');
 });
 
-// Route::get('/home/{id}','ProductController@detalhes');
-
 Route::get('/home/detalhes/{id}', [
     ProductController::class, 'detalhes'
 ])->name('detalhes');
 
-// Route::get('home/detalhes/', function () {
-//     return view('produtos.detalhes');
-// });
+
+
 
 require __DIR__ . '/auth.php';

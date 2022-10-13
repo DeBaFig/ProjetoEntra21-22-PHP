@@ -15,6 +15,8 @@ class HomeController extends Controller
             ->join('products', 'photos.id', '=', 'products.id')->where('isActive', '=', 1)->get();
         return view('home.index')->with("viewData", $viewData);
     }
+
+
     public function about()
     {
         $viewData = [];

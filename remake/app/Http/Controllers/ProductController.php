@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\Product;
+use App\Models\Photo;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\HomeController;
 
 class ProductController extends Controller
 {
@@ -97,9 +99,11 @@ class ProductController extends Controller
 
     public function detalhes($id)
     {
-        $product = Product::findOrFail($id);
-        return view('home.detalhes', ['product' => $product]);
-    }
 
-    
+        $viewData = Photo::select('products.id', 'products.title', 'photos.photo_image' ,'products.isNew' , 'products.max_price', 'products.isNegotiable', 'products.description', 'products.address')
+            ->join('products', 'photos.id', '=', 'products.id')->where('products.id', '=', $id)->get();
+        return view('home.detalhes')->with("viewData", $viewData);
+        
+    }
+  
 }
