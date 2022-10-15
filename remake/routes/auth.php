@@ -36,7 +36,7 @@ Route::middleware('guest')->group(function () {
         ->name('password.update');
 
     // HOMECONTROLLER
-    Route::get('/', [HomeController::class, 'index'])->name('home');
+    Route::get('/home', [HomeController::class, 'index'])->name('home');
 
     Route::get('/contato', [HomeController::class, 'contact'])->name('contato');
 
