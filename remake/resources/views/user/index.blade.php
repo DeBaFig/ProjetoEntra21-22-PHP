@@ -44,7 +44,6 @@
 
                 </div>
                 <div class="my-8 px-9">
-                    {{ $viewData->links() }}
                 </div>
             </div>
         </div>

@@ -17,5 +17,6 @@ Route::prefix('user')->group(function () {
 
 
         Route::get('/criar', [ProductController::class, 'create'])->name('user.add.product');
+        Route::post('/criar/salva', [ProductController::class, 'store'])->name('user.store.product');
     });
 });

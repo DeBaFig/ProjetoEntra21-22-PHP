@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Product;
+use App\Models\Photo;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 
 class ProductController extends Controller
 {
@@ -15,7 +15,7 @@ class ProductController extends Controller
      */
     public function index()
     {
-       return view('user.add');
+        return view('user.add');
     }
 
     /**
@@ -36,7 +36,24 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // dd($request);
+        $this->validate($request, [
+            'title' => 'required',
+        ]);
+        $product = Product::create($request->all());
+        if ($request->images) {
+            // dd($request->images);
+            foreach ($request->images as $image) {
+                $filename = $image->store('images');
+                $image->move(public_path('images'), $filename);
+                Photo::create([
+                    'product_id' => $product->id,
+                    'photo_image' => $filename
+                ]);
+            }
+        }
+
+        return redirect()->back();
     }
 
     /**
@@ -89,6 +106,4 @@ class ProductController extends Controller
         $product = Product::findOrFail($id);
         return view('home.detalhes', ['product' => $product]);
     }
-
-    
 }
