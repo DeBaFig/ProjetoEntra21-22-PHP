@@ -1,5 +1,5 @@
 <x-guest-layout>
-    <div class="bg-sky-200">
+    <div class="bg-zinc-50">
         <div class="bg-gradient-to-r from-zinc-50">
             <section class="text-black-400 body-font">
                 <div class="container px-5 py-24 mx-auto">
