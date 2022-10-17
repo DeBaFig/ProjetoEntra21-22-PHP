@@ -5,8 +5,8 @@
         <x-auth-validation-errors class="mb-4" :errors="$errors" />
 
         <div>
-            <img src="{{ asset('assets/img/Home.png') }}" class="w-full">
-        </div>
+            <a href="#anuncios"><img src="{{ asset('assets/img/Home.png') }}" class="w-full">
+         </div>
 
         <div class="container mx-auto flex items-center flex-wrap pt-4 pb-12">
 
@@ -22,9 +22,9 @@
             </nav>
             @foreach($viewData as $key => $detalhes)
 
-            <div class="w-full md:w-1/2 xl:w-1/3 p-6 flex flex-col ">
+            <div id="anuncios" class="w-full md:w-1/2 xl:w-1/3 p-6 flex flex-col ">
                 <a href="#">
-                    <img class="hover:grow hover:shadow-lg rounded-lg" src="{{ $detalhes['photo_image'] }}">
+                   <img class="hover:grow hover:shadow-lg rounded-lg" src="{{ $detalhes['photo_image'] }}">
                     <div class="pt-3 flex items-center justify-between">
                         <p class="">{{ $detalhes['title'] }}</p>
                     </div>
