@@ -15,7 +15,8 @@
   <script src="https://cdn.tailwindcss.com"></script>
 
   <link rel="stylesheet" href="{{asset('assets/css/layout.css')}}">
-
+  <script src="{{ asset('assets/js/script.js') }}"></script>
+  <link rel="stylesheet" href="{{ asset('assets/css/detalhes.css') }}">
 </head>
 
 <body>
@@ -65,6 +66,8 @@
   <script>
     new window.VLibras.Widget('https://vlibras.gov.br/app');
   </script>
+  <script src="detalhes.js"></script>
+
 </body>
 
 </html>

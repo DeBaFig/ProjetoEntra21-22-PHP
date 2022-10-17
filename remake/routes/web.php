@@ -15,9 +15,7 @@ use App\Http\Controllers\ProductController;
 
 
 
-Route::get('/home/detalhes/{id}', [
-    ProductController::class, 'detalhes'
-])->name('detalhes');
+
 
 
 //  USER AUTH ROUTE

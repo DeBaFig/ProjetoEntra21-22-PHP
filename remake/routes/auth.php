@@ -9,7 +9,8 @@ use App\Http\Controllers\Auth\PasswordResetLinkController;
 use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\Auth\VerifyEmailController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\HomeController;;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\UserController;
 
 
 Route::middleware('guest')->group(function () {
@@ -37,7 +38,7 @@ Route::middleware('guest')->group(function () {
 
     // HOMECONTROLLER
     Route::get('/home', [HomeController::class, 'index'])->name('home');
-    
+
     Route::get('/', [HomeController::class, 'index'])->name('home');
 
     Route::get('/contato', [HomeController::class, 'contact'])->name('contato');
@@ -51,6 +52,8 @@ Route::middleware('guest')->group(function () {
     Route::get('contato/obrigado', function () {
         return view('home.obrigado');
     })->name('obrigado');
+
+    Route::get('/home/detalhes/{id}', [ProductController::class, 'detalhes'])->name('detalhes');
 });
 
 Route::middleware('auth')->group(function () {

@@ -127,5 +127,13 @@ class UserController extends Controller
         } else {
             return redirect()->back()->with('error', 'Senha inválida');
         }
+        
+    }
+    public function detalhes($id)
+    {
+        $viewData = Photo::select('*')
+            ->join('products', 'photos.id', '=', 'products.id')->where('products.id', '=', $id)->get();
+        return view('user.detalhes')->with("viewData", $viewData);
+        
     }
 }

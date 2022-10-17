@@ -13,7 +13,7 @@
                 <x-auth-validation-errors class="mb-4" :errors="$errors" />
                     @foreach($viewData as $key => $detalhes)
                     <div class="w-full md:w-1/2 xl:w-1/3 p-6 flex flex-col ">
-                        <a href="#">
+                        <a href="{{ route('user.detalhes', ['id'=> $detalhes['product_id']] ) }}">
                             <img class="hover:grow hover:shadow-lg rounded-lg" src="{{ asset($detalhes['photo_image']) }}">
                             <div class="pt-3 flex items-center justify-between">
                                 <p class="">{{ $detalhes['title'] }}</p>
