@@ -110,7 +110,7 @@
                             </x-dropdown-link>
                         </form>
                         @endif
-                        
+
                     </x-slot>
                 </x-dropdown>
             </div>
@@ -159,6 +159,21 @@
                     {{ __('Gerenciar Usúarios') }}
                 </x-responsive-nav-link>
             </div>
+            <div class="pt-2 pb-3 space-y-1">
+                <x-responsive-nav-link :href="route('admin.users')">
+                    {{ __('Registar novo Administrador') }}
+                </x-responsive-nav-link>
+            </div>
+            <div class="pt-2 pb-3 space-y-1">
+                <x-responsive-nav-link :href="route('admin.users')">
+                    {{ __('Alterar senha') }}
+                </x-responsive-nav-link>
+            </div>
+            <div class="pt-2 pb-3 space-y-1">
+                <x-responsive-nav-link :href="route('admin.users')">
+                    {{ __('Alterar meus dados') }}
+                </x-responsive-nav-link>
+            </div>
             <form method="POST" action="{{ route('admin.logout') }}">
                 @csrf
 
@@ -199,8 +214,7 @@
             @endif
             <div class="mt-3 space-y-1">
                 <!-- Authentication -->
-                
-            </div>
             </div>
         </div>
+    </div>
 </nav>
