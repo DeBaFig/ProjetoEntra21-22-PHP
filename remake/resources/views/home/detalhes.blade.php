@@ -4,7 +4,6 @@
             <div class="p-6 bg-white border-b border-gray-200">
                 <section class="bg-white py-8">
                     @foreach($viewData as $product)
-                    <div class="container">
                         <div class="product-div">
                             <div class="product-div-left">
                                 <div class="img-container">
@@ -19,7 +18,6 @@
 
                             </div>
                         </div>
-                    </div>
                     @endforeach
                 </section>
             </div>

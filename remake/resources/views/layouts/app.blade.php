@@ -79,7 +79,6 @@
       new window.VLibras.Widget('https://vlibras.gov.br/app');
     </script>
     <script src="detalhes.js"></script>
-
 </body>
 
 </html>
