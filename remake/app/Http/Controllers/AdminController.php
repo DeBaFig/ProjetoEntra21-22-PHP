@@ -77,7 +77,6 @@ class AdminController extends Controller
             ->join('users', 'users.id', '=', 'products.user_id')
             ->where('products.id', '<', 30)
             ->paginate(10);
-            // dd($viewData);  
         return view('admin.products')->with('viewData', $viewData);
     }
 

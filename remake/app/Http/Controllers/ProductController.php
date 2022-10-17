@@ -36,13 +36,11 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        // dd($request);
         $this->validate($request, [
             'title' => 'required',
         ]);
         $product = Product::create($request->all());
         if ($request->images) {
-            // dd($request->images);
             foreach ($request->images as $image) {
                 $filename = $image->store('images');
                 $image->move(public_path('images'), $filename);
