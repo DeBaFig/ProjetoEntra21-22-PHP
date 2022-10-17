@@ -27,11 +27,14 @@
                                                 <div class = "product-div-right">
                                                     <span class = "product-name">{{ $product['title'] }}</span>
                                                     <span class = "product-price">Pago: R$ {{ number_format((float)($product['max_price'] / 100), 2, ',', '') }}</span>
+                                                    <p class = "product-description">Localizção: {{ $product['address'] }}</p>
                                                     <p class = "product-description">{{ $product['description'] }}</p>
+                                            
                                                     <!-- <div class = "btn-groups">
                                                         <button type = "button" class = "add-cart-btn"><i class = "fas fa-shopping-cart"></i>Falar com Comprador</button>
                                                         <button type = "button" class = "buy-now-btn"><i class = "fas fa-wallet"></i>buy now</button>
                                                     </div> -->
+
                                                 </div>
                                             </div>
                                         </div>
