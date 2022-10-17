@@ -25,12 +25,6 @@
     {{ $slot }}
   </div>
 
-  <div vw class="enabled">
-    <div vw-access-button class="active"></div>
-    <div vw-plugin-wrapper>
-      <div class="vw-plugin-top-wrapper"></div>
-    </div>
-  </div>
   <footer class="text-gray-600 body-font bg-lime-200">
     <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
       <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
@@ -61,13 +55,16 @@
           </nav>
         </div>
   </footer>
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
 </body>
-<script>
-  new window.VLibras.Widget('https://vlibras.gov.br/app');
-</script>
-<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-
-<script src="{{ asset('assets/js/script.js') }}"></script>
-<script src="https://unpkg.com/@popperjs/core@2.9.1/dist/umd/popper.min.js" charset="utf-8"></script>
 
 </html>

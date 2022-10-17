@@ -14,7 +14,7 @@
                     @foreach($viewData as $key => $detalhes)
                     <div class="w-full md:w-1/2 xl:w-1/3 p-6 flex flex-col ">
                         <a href="#">
-                            <img class="hover:grow hover:shadow-lg rounded-lg" src="{{ $detalhes['photo_image'] }}">
+                            <img class="hover:grow hover:shadow-lg rounded-lg" src="{{ asset($detalhes['photo_image']) }}">
                             <div class="pt-3 flex items-center justify-between">
                                 <p class="">{{ $detalhes['title'] }}</p>
                             </div>
@@ -33,7 +33,6 @@
                     @endforeach
                 </div>
                 <div class="my-8 px-9">
-                    {{ $viewData->links() }}
                 </div>
             </div>
         </div>

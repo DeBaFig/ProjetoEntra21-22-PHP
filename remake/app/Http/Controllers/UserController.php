@@ -18,14 +18,14 @@ class UserController extends Controller
      */
     public function index()
     {
-        $user = auth()->user();
-        $viewData = Photo::select('products.title','products.publish_at', 'products.user_id', 'photos.photo_image', 'products.isNew', 'products.max_price', 'products.isNegotiable')
+        $user = Auth::user();
+        $query = Photo::select('products.title', 'product_id','products.publish_at', 'products.user_id', 'photos.photo_image', 'products.isNew', 'products.max_price', 'products.isNegotiable')
             ->join('products', 'photos.id', '=', 'products.id')
             ->where('isActive', '=', 1)
             ->where('user_id', '!=', $user->id)
-            ->orderBy('publish_at')
-            ->paginate(6);
-        return view('user.index')->with("viewData", $viewData );
+            ->get();
+        $viewData = collect($query)->unique('product_id');
+        return view('user.index')->with("viewData", $viewData);
     }
 
     /**
@@ -36,13 +36,13 @@ class UserController extends Controller
     public function create()
     {
         $user = auth()->user();
-        $viewData = Photo::select('products.title', 'photos.photo_image', 'products.isNew', 'products.max_price', 'products.isNegotiable')
+        $query = Photo::select('products.title','isActive', 'photos.photo_image', 'photos.product_id','products.isNew', 'products.max_price', 'products.isNegotiable')
             ->join('products', 'photos.id', '=', 'products.id')
-            ->where('isActive', '=', 1)
+            ->where('isActive', '=', '1')
             ->where('products.user_id', '=', $user->id)
-            ->orderBy('publish_at')
-            ->paginate(6);
-        if ($viewData->count() == 0) {
+            ->get();
+        $viewData = collect($query)->unique('product_id');
+        if ($query->count() == 0) {
             return view('user.product')->with("error", 'Você ainda não tem nenhum anúncio, que tal comprar algo?')->with('viewData', $viewData);
         }
         return view('user.product')->with("viewData", $viewData);
@@ -128,5 +128,4 @@ class UserController extends Controller
             return redirect()->back()->with('error', 'Senha inválida');
         }
     }
-
 }

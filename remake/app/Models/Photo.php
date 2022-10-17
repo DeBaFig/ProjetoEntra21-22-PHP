@@ -16,8 +16,7 @@ class Photo extends Model
      */
     protected $fillable = [
         'photo_image',
-        'product',
-        'create_at',
+        'product_id',
     ];
 
     /**

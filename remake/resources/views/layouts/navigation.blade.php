@@ -35,7 +35,7 @@
                     </x-nav-link>
                 </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('user.home')">
+                    <x-nav-link :href="route('user.add.product')">
                         {{ __('Criar Anúncio') }}
                     </x-nav-link>
                 </div>
@@ -199,10 +199,7 @@
             @endif
             <div class="mt-3 space-y-1">
                 <!-- Authentication -->
-                <div class="pt-2 pb-3 space-y-1">
-                <x-responsive-nav-link :href="route('user.edit')">
-                    {{ __('TESTE') }}
-                </x-responsive-nav-link>
+                
             </div>
             </div>
         </div>

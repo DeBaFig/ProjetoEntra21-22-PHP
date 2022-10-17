@@ -31,9 +31,7 @@ class AuthenticatedSessionController extends Controller
         $request->authenticate();
 
         $request->session()->regenerate();
-        $user = User::where('email', '=', $request->email)->first();
-        $user->last_login = now()->toDateTimeString();
-        $user->save();
+
         return redirect()->intended(RouteServiceProvider::HOME);
     }
 
@@ -51,6 +49,6 @@ class AuthenticatedSessionController extends Controller
 
         $request->session()->regenerateToken();
 
-        return redirect('/');
+        return redirect('home');
     }
 }
