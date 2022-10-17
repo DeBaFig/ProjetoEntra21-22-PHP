@@ -17,6 +17,8 @@ class HomeController extends Controller
             ->paginate(15);
         return view('home.index')->with("viewData", $viewData);
     }
+
+
     public function about()
     {
         $viewData = [];
