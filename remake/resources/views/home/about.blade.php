@@ -5,7 +5,7 @@
                 <div class="container px-5 py-24 mx-auto">
                     <div class="flex flex-col text-center w-full mb-20">
                         <h1 class="text-2xl font-medium title-font mb-4 text-black tracking-widest">SOBRE NÓS</h1>
-                        <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-justify">Somos alunos do Entra21©, que juntos formaram o grupo 1 da turma de PHP. Unindo conhecimento e criatividade, demos ínicio ao projeto "Balcão Brasil". Todos os integrantes contribuíram positivamente para o trabalho, dedicando tempo e concentração com a intenção de obter o melhor resultado. Agradecimentos especiais ao nosso instrutor Adriano Machado, por todo o conhecimento passado e suporte prestado; ao demais alunos da nossa turma; e também a ProWay, por nos ter dado a oportunidade de participar das aulas e viver tudo que foi vivido.
+                        <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-justify">Somos alunos do Entra21©, que juntos formaram o grupo 1 da turma de PHP. Unindo conhecimento e criatividade, demos ínicio ao projeto "Balcão Brasil". Todos os integrantes contribuíram positivamente para o trabalho, dedicando tempo e concentração com a intenção de obter o melhor resultado. Agradecimentos especiais ao nosso instrutor Adriano Machado, por todo o conhecimento passado e suporte prestado; Aos demais alunos da nossa turma; e também a ProWay, por nos ter dado a oportunidade de participar das aulas e viver tudo que foi vivido.
                         <p>
                     </div>
                     <div class="flex flex-wrap -m-4 justify-center">
