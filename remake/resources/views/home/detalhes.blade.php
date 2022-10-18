@@ -20,7 +20,7 @@
                             <p class="pt-8 text-sm">{{ $product['description'] }}</p>
 
                             <div class="pt-12 pb-8">
-                                <button disabled class="bg-green-700 hover:bg-green-900 text-white font-bold py-2 px-4 rounded-full">
+                                <button data-bs-toggle="tooltip" title="Não implementado ainda, aguarde!" disabled class="bg-green-700 hover:bg-green-900 text-white font-bold py-2 px-4 rounded-full">
                                     Entrar em contato
                                 </button>
                             </div>
