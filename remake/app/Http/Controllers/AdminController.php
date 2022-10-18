@@ -12,7 +12,6 @@ class AdminController extends Controller
     //login blade only for admin 
     public function index()
     {
-
         return view('admin.login');
     }
     //login logic using the middleware('admin') 

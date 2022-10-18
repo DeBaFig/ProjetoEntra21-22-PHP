@@ -5,7 +5,6 @@
     </x-slot>
 
     <!-- Validation Errors -->
-    <x-auth-validation-errors class="mb-4" :errors="$errors" />
     <div class="py-0">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white sm:rounded-lg p-6 md:w-1/2 lg:w-1/2 xl:w-1/2" style="margin:0 auto;">
@@ -13,7 +12,7 @@
                     <img src="{{ asset('assets/img/cadastro.png') }}" width="600px">
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
-
+                        <x-auth-validation-errors class="mb-4" :errors="$errors" />
                         <!-- Name -->
                         <div>
                             <x-input-label for="name" :value="__('Nome')" />

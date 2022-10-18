@@ -11,3 +11,4 @@
 <link href="/dist/output.css" rel="stylesheet">
 <!-- style -->
 <link rel="stylesheet" href="{{asset('assets/css/layout.css')}}">
+<link rel="stylesheet" href="{{asset('assets/css/detalhes.css')}}">
