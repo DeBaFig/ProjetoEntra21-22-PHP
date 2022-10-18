@@ -39,14 +39,22 @@
                             <x-input-label for="cep" :value="__('CEP')" />
                             <x-text-input id="cep" class="block mt-1 w-full" type="text" name="cep" value="{{ $detalhes['cep'] }}" />
                         </div>
-                        <br> ADICIONE SUAS REDES SOCIAIS PARA O VENDEDOR TE ENCONTRAR:<br>
+                        <br> ADICIONE SUAS REDES SOCIAIS PARA O VENDEDOR TE ENCONTRAR:<br><br>
                         <div>
-                            <x-input-label for="facebook" :value="__('FACEBOOK')" />
-                            <x-text-input id="facebook" class="block mt-1 w-full" type="text" name="facebook" value="{{ $detalhes['facebook'] }}" />
+                            <x-input-label for="facebook" :value="__('Facebook')" />
+                            <x-text-input id="facebook" class="block mt-1 w-full" type="url" name="facebook" value="{{ $detalhes['facebook'] }}" />
                         </div>
                         <div>
-                            <x-input-label for="instagram" :value="__('INSTAGRAM')" />
-                            <x-text-input id="instagram" class="block mt-1 w-full" type="text" name="instagram" value="{{ $detalhes['instagram'] }}" />
+                            <x-input-label for="whatsapp" :value="__('Whatsapp')" />
+                            <x-text-input id="whatsapp" class="block mt-1 w-full" type="text" name="whatsapp" value="{{ $detalhes['whatsapp'] }}" />
+                        </div>
+                        <div>
+                            <x-input-label for="instagram" :value="__('Instagram')" />
+                            <x-text-input id="instagram" class="block mt-1 w-full" type="url" name="instagram" value="{{ $detalhes['instagram'] }}" />
+                        </div>
+                        <div>
+                            <x-input-label for="twitter" :value="__('Twitter')" />
+                            <x-text-input id="twitter" class="block mt-1 w-full" type="url" name="twitter" value="{{ $detalhes['twitter'] }}" />
                         </div>
                         <br><br> Digite sua senha para confirmar as alterações:<br><br>
                         <div>

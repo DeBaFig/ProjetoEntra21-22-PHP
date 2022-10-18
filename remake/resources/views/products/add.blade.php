@@ -19,12 +19,12 @@
                                                 <x-text-input type="hidden" name="user_id" value="{{ Auth::user()->id }}"/>
                                                 <x-input-label for="title" :value="__('Titulo')" />
                                                 <x-text-input id="title" class="block mt-1 w-full" type="text" name="title" required="true" />
-                                                <x-input-label for="reference_link" :value="__('Link de referencia')" />
-                                                <x-text-input id="reference_link" class="block mt-1 w-full" type="link" name="reference_link" />
+                                                <x-input-label for="reference_link" :value="__('Link de referência')" />
+                                                <x-text-input id="reference_link" class="block mt-1 w-full" type="url" name="reference_link" />
                                                 <x-input-label for="address" :value="__('Endereço')" />
                                                 <x-text-input id="address" class="block mt-1 w-full" type="text" name="address" />
                                                 <x-input-label for="inputImage" :value="__('Imagem de Referência')" />
-                                                <x-text-input id="inputImage" class="block mt-1 w-full" type="file" multiple name="images[]" />
+                                                <x-text-input id="inputImage" class="block mt-1 w-full" type="file" placeholder="https://exemplo.com" multiple name="images[]" />
                                             </div>
                                         </div>
                                         <div>
@@ -49,17 +49,17 @@
                                         <div class="grid grid-cols-3 gap-10">
                                             <div class="col-span-1">
                                                 <x-input-label for="isNew" :value="__('Somente novo?')" />
-                                                <x-text-input id="isNew" class="block mt-1 " type="checkbox" name="isNew" value="1"/>
+                                                <x-text-input id="isNew" class="block mt-1 border-solid border-2 border-gray-300 " type="checkbox" name="isNew" value="1"/>
                                             </div>
                                             <div class="col-span-1">
                                                 <x-input-label for="isNegotiable" :value="__('Negocia?')" />
-                                                <x-text-input id="isNegotiable" class="block mt-1 " type="checkbox" name="isNegotiable" value="1"/>
+                                                <x-text-input id="isNegotiable" class="block mt-1 border-solid border-2 border-gray-300 " type="checkbox" name="isNegotiable" value="1"/>
                                             </div>
                                             <div class="col-span-1">
                                                 <x-input-label for="activate" :value="__('Ativar')" />
-                                                <x-text-input id="activate" class="block mt-1 " type="radio" name="isActive" value="1"  />
+                                                <x-text-input id="activate" class="block mt-1 border-solid border-2 border-gray-300 " type="radio" name="isActive" value="1"  />
                                                 <x-input-label for="draft" :value="__('Rascunho')" />
-                                                <x-text-input id="draft" class="block mt-1 " type="radio" name="isActive" value="0"  />
+                                                <x-text-input id="draft" class="block mt-1 border-solid border-2 border-gray-300 " type="radio" name="isActive" value="0"  />
                                             </div>
                                         </div>
 

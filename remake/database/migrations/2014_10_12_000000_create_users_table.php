@@ -25,6 +25,8 @@ return new class extends Migration
             $table->string('cpf')->nullable();
             $table->string('facebook')->nullable();
             $table->string('instagram')->nullable();
+            $table->string('whatsapp')->nullable();
+            $table->string('twitter')->nullable();
             $table->string('avatar')->nullable();
             $table->tinyInteger('isActive')->default(1);
             $table->timestamp('last_login')->nullable();

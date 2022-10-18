@@ -107,7 +107,9 @@ class ProductController extends Controller
     public function detalhes($id)
     {
         $viewData = Photo::select('products.id', 'products.title', 'photos.photo_image' ,'products.isNew' , 'products.max_price', 'products.isNegotiable', 'products.description', 'products.address')
-            ->join('products', 'photos.id', '=', 'products.id')->where('products.id', '=', $id)->get();
+            ->join('products', 'photos.id', '=', 'products.id')
+            ->join('users', 'products.user_id', '=', 'users.id')
+            ->where('products.id', '=', $id)->get();
         return view('home.detalhes')->with("viewData", $viewData);
         
     }
