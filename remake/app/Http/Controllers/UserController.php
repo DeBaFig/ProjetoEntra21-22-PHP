@@ -100,7 +100,7 @@ class UserController extends Controller
     public function edit()
     {
         $user_email = Auth::user()->email;
-        $viewData = User::select('name', 'email', 'password',  'phone', 'address', 'cep', 'cpf', 'facebook', 'instagram')->where('email', '=', $user_email)->get();
+        $viewData = User::select('name', 'email', 'password',  'whatsapp','twitter','phone', 'address', 'cep', 'cpf', 'facebook', 'instagram')->where('email', '=', $user_email)->get();
         return view('user.update')->with("viewData", $viewData);
     }
 
@@ -122,6 +122,8 @@ class UserController extends Controller
             $user->cep = $request->cep;
             $user->facebook = $request->facebook;
             $user->instagram = $request->instagram;
+            $user->whatsapp = $request->whatsapp;
+            $user->twitter = $request->twitter;
             $user->save();
             return redirect()->back()->with('error', 'Dados atualizados com sucesso');
         } else {
