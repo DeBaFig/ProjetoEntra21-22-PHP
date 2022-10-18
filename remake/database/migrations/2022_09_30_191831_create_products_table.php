@@ -27,6 +27,7 @@ class CreateProductsTable extends Migration
             $table->tinyInteger('isNew')->nullable();
             $table->tinyInteger('isNegotiable')->nullable();
             $table->tinyInteger('isActive')->default(1);
+            $table->tinyInteger('status')->default(1);
             $table->timestamps();
         });
     }

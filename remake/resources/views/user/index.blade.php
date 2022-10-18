@@ -37,6 +37,7 @@
                                 @if($detalhes['isNew'] == 1)
                                 <img class="ml-2" src="{{ asset('assets/icon/star-solid.svg') }}" style="width: 30px;" data-bs-toggle="tooltip" title="COMPRO NOVO!">
                                 @endif
+                                
                             </div>
                         </a>
                     </div>
