@@ -65,7 +65,6 @@ class AdminController extends Controller
 
         $viewData = Product::select(
             'products.title',
-            'products.publish_at',
             'products.quantity',
             'products.isNew',
             'products.isNegotiable',

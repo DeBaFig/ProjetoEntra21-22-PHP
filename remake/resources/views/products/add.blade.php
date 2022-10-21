@@ -16,15 +16,17 @@
                                     <div class="space-y-6 bg-white px-4 py-5 sm:p-6">
                                         <div class="grid grid-cols-3 gap-6">
                                             <div class="col-span-3">
-                                                <x-text-input type="hidden" name="user_id" value="{{ Auth::user()->id }}"/>
+                                                <x-text-input type="hidden" name="user_id" value="{{ Auth::user()->id }}" />
                                                 <x-input-label for="title" :value="__('Titulo')" />
                                                 <x-text-input id="title" class="block mt-1 w-full" type="text" name="title" required="true" />
                                                 <x-input-label for="reference_link" :value="__('Link de referência')" />
                                                 <x-text-input id="reference_link" class="block mt-1 w-full" type="url" name="reference_link" />
+                                                <x-input-label for="photo_url" :value="__('URL imagem - Referência')" />
+                                                <x-text-input id="photo_url" class="block mt-1 w-full" type="url" name="photo_url" />
                                                 <x-input-label for="address" :value="__('Endereço')" />
                                                 <x-text-input id="address" class="block mt-1 w-full" type="text" name="address" />
-                                                <x-input-label for="inputImage" :value="__('Imagem de Referência')" />
-                                                <x-text-input id="inputImage" class="block mt-1 w-full" type="file" placeholder="https://exemplo.com" multiple name="images[]" />
+
+
                                             </div>
                                         </div>
                                         <div>
@@ -49,21 +51,26 @@
                                         <div class="grid grid-cols-3 gap-10">
                                             <div class="col-span-1">
                                                 <x-input-label for="isNew" :value="__('Somente novo?')" />
-                                                <x-text-input id="isNew" class="block mt-1 border-solid border-2 border-gray-300 " type="checkbox" name="isNew" value="1"/>
+                                                <x-text-input id="isNew" class="block mt-1 border-solid border-2 border-gray-300 " type="checkbox" name="isNew" value="1" />
                                             </div>
                                             <div class="col-span-1">
                                                 <x-input-label for="isNegotiable" :value="__('Negocia?')" />
-                                                <x-text-input id="isNegotiable" class="block mt-1 border-solid border-2 border-gray-300 " type="checkbox" name="isNegotiable" value="1"/>
+                                                <x-text-input id="isNegotiable" class="block mt-1 border-solid border-2 border-gray-300 " type="checkbox" name="isNegotiable" value="1" />
                                             </div>
                                             <div class="col-span-1">
                                                 <x-input-label for="activate" :value="__('Ativar')" />
-                                                <x-text-input id="activate" class="block mt-1 border-solid border-2 border-gray-300 " type="radio" name="isActive" value="1"  />
+                                                <x-text-input id="activate" class="block mt-1 border-solid border-2 border-gray-300 " type="radio" name="isActive" value="1" />
                                                 <x-input-label for="draft" :value="__('Rascunho')" />
-                                                <x-text-input id="draft" class="block mt-1 border-solid border-2 border-gray-300 " type="radio" name="isActive" value="0"  />
+                                                <x-text-input id="draft" class="block mt-1 border-solid border-2 border-gray-300 " type="radio" name="isActive" value="0" />
                                             </div>
                                         </div>
 
                                     </div>
+                                    <div class="grid grid-cols-1 gap-6">
+                                        <x-input-label for="inputImage" :value="__('Imagem de Referência *Não implementado*')" />
+                                        <x-text-input id="inputImage" class="block mt-1 w-full" type="file" placeholder="https://exemplo.com" disabled multiple name="images[]" />
+                                    </div>
+
                                     <div class="bg-gray-50 px-4 py-3 text-right sm:px-6">
                                         <button type="submit" class="inline-flex justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Salvar</button>
                                     </div>

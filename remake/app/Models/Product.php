@@ -22,7 +22,6 @@ class Product extends Model
         'reference_link',
         'min_price',
         'max_price',
-        'publish_at',
         'quantity',
         'isNew',
         'isNegotiable',
@@ -37,9 +36,6 @@ class Product extends Model
     protected $casts = [
         'id' => 'integer',
         'publish_at' => 'timestamp',
-        'isNew' => 'integer',
-        'isNegotiable' => 'integer',
-        'isActive' => 'integer',
     ];
 
     public function user()

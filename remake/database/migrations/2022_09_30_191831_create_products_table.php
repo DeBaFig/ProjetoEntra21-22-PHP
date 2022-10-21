@@ -20,9 +20,8 @@ class CreateProductsTable extends Migration
             $table->string('address', 150)->nullable();
             $table->string('reference_link')->nullable();
             $table->integer('user_id');
-            $table->integer('min_price')->nullable();
-            $table->integer('max_price')->nullable();
-            $table->timestamp('publish_at');
+            $table->decimal('min_price', 8, 2, true)->nullable();
+            $table->decimal('max_price', 8, 2, true)->nullable();
             $table->integer('quantity')->default(1);
             $table->tinyInteger('isNew')->nullable();
             $table->tinyInteger('isNegotiable')->nullable();

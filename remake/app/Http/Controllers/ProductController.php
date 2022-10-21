@@ -40,22 +40,10 @@ class ProductController extends Controller
             'title' => 'required',
         ]);
         $product = Product::create($request->all());
-        if ($request->images) {
-            foreach ($request->images as $image) {
-                $filename = $image->store('images');
-                $image->move(public_path('images'), $filename);
-                Photo::create([
-                    'product_id' => $product->id,
-                    'photo_image' => $filename
-                ]);
-            }
-        }else{
-            Photo::create([
-                'product_id' => $product->id,
-                'photo_image' => 'assets/logo/venha_vender.jpg'
-            ]);
-        }
-
+        Photo::create([
+            'product_id' => $product->id,
+            'photo_url' => $request->photo_url
+        ]);
         return redirect()->back();
     }
 
@@ -106,7 +94,7 @@ class ProductController extends Controller
 
     public function detalhes($id)
     {
-        $viewData = Photo::select('products.id', 'users.id','users.email', 'users.facebook','users.instagram','users.twitter','users.whatsapp', 'products.title', 'photos.photo_image' ,'products.isNew' , 'products.max_price', 'products.isNegotiable', 'products.description', 'products.address')
+        $viewData = Photo::select('products.id', 'users.id','users.email', 'users.facebook','users.instagram','users.twitter','users.whatsapp', 'products.title', 'photos.photo_image' ,'photos.photo_url' ,'products.isNew' , 'products.max_price', 'products.isNegotiable', 'products.description', 'products.address')
             ->join('products', 'photos.id', '=', 'products.id')
             ->join('users', 'products.user_id', '=', 'users.id')
             ->where('products.id', '=', $id)->get();

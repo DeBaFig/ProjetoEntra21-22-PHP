@@ -19,7 +19,7 @@ class UserController extends Controller
     public function index()
     {
         $user = Auth::user();
-        $query = Photo::select('products.title', 'product_id','products.publish_at', 'products.user_id', 'photos.photo_image', 'products.isNew', 'products.max_price', 'products.isNegotiable')
+        $query = Photo::select('products.title', 'product_id', 'products.user_id', 'photos.photo_image','photos.photo_url', 'products.isNew', 'products.max_price', 'products.isNegotiable')
             ->join('products', 'photos.id', '=', 'products.id')
             ->where('isActive', '=', 1)
             ->where('user_id', '!=', $user->id)
@@ -36,7 +36,7 @@ class UserController extends Controller
     public function create()
     {
         $user = auth()->user();
-        $query = Photo::select('products.title','isActive', 'photos.photo_image', 'photos.product_id','products.isNew', 'products.max_price', 'products.isNegotiable')
+        $query = Photo::select('products.title','isActive', 'photos.photo_image','photos.photo_url', 'photos.product_id','products.isNew', 'products.max_price', 'products.isNegotiable')
             ->join('products', 'photos.id', '=', 'products.id')
             ->where('isActive', '=', '1')
             ->where('products.user_id', '=', $user->id)

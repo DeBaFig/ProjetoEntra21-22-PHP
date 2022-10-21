@@ -29,7 +29,6 @@
                                                 @foreach($viewData as $key => $detalhes)
                                                 <tr>
                                                     <x-table-cell>{{ $detalhes['title'] }}</x-table-cell>
-                                                    <x-table-cell>{{ $detalhes['publish_at'] }}</x-table-cell>
                                                     <x-table-cell>{{ $detalhes['quantity'] }}</x-table-cell>
                                                     <x-table-cell>{{ $detalhes['isNegotiable']? 'Sim': 'Não' }}</x-table-cell>
                                                     <x-table-cell>{{ $detalhes['isNew']? 'Sim': 'Não' }}</x-table-cell>

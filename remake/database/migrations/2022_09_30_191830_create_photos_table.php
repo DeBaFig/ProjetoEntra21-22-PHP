@@ -15,7 +15,8 @@ class CreatePhotosTable extends Migration
     {
         Schema::create('photos', function (Blueprint $table) {
             $table->id();
-            $table->string('photo_image');
+            $table->string('photo_image')->default('assets/logo/venha_vender.jpg');
+            $table->string('photo_url')->nullable();
             $table->integer('product_id');
             $table->timestamps();
         });

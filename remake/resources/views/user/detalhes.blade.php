@@ -12,7 +12,7 @@
                     <div class="product-div">
                         <div class="product-div-left">
                             <div class="img-container">
-                                <img src="{{ asset($product['photo_image']) }}">
+                                <img src="{{ $product['photo_url']??asset($product['photo_image']) }}">
                             </div>
                         </div>
                         <div class="p-4 md:p-12 text-center lg:text-left">
