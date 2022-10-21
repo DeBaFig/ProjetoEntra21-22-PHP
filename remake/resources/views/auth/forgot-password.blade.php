@@ -7,7 +7,7 @@
         </x-slot>
 
         <div class="mb-4 text-sm text-gray-600">
-            {{ __('Esqueceu sua senha? Sem problemas! Apenas nos informe seu endereço de e-mail para que possamos enviar uma redefinição de senha para você criar uma nova.') }}
+            {{ __('Esqueceu sua senha? Sem problemas!Apenas nos informe seu endereço de e-mail para que possamos enviar uma redefinição de senha para você criar uma nova.') }}
         </div>
 
         <!-- Session Status -->
@@ -32,4 +32,5 @@
                 </x-primary-button>
             </div>
         </form>
+    </x-auth-card>
 </x-guest-layout>
