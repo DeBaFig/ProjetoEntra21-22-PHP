@@ -8,32 +8,12 @@ use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
-    {
-        return view('user.add');
-    }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function create()
     {
         return view('products.add');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(Request $request)
     {
         $this->validate($request, [
@@ -47,54 +27,44 @@ class ProductController extends Controller
         return redirect()->back();
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Product  $product
-     * @return \Illuminate\Http\Response
-     */
-    // public function show(Product $product)
-    // {
-    //     //
-    // }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\Product  $product
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Product $product)
+    public function edit($id)
     {
-        //
+        $viewData = Product::select('*')->where('id',$id)->get();
+        $photoData = Photo::select('*')->where('product_id',$id)->get();
+        return view('products.edit')->with('viewData', $viewData)->with('photoData', $photoData);
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Product  $product
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, Product $product)
+
+    public function update(Request $request, $id)
     {
-        //
+        $product = Product::select('*')->where('id', $id)->first();
+        $product->title = $request->title;
+        $product->description = $request->description;
+        $product->address = $request->address;
+        $product->reference_link = $request->reference_link;
+        $product->min_price = $request->min_price;
+        $product->max_price = $request->max_price;
+        $product->quantity = $request->quantity;
+        $product->isNew = $request->isNew;
+        $product->isNegotiable = $request->isNegotiable;
+        $product->isActive = $request->isActive;
+        $product->save();
+        $photos = Photo::where('product_id', $id)->first();
+        $photos->photo_url = $request->photo_url;
+        $photos->save();
+        return redirect()->route('user.detalhes' , ['id' => $id]);
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\Product  $product
-     * @return \Illuminate\Http\Response
-     */
     public function destroy(Product $product)
     {
-        //
+
+
     }
 
     public function detalhes($id)
     {
-        $viewData = Photo::select('products.id', 'users.id','users.email', 'users.facebook','users.instagram','users.twitter','users.whatsapp', 'products.title', 'photos.photo_image' ,'photos.photo_url' ,'products.isNew' , 'products.max_price', 'products.isNegotiable', 'products.description', 'products.address')
+        $viewData = Photo::select('products.id', 'users.id','users.email', 'users.facebook','users.instagram','users.twitter','users.whatsapp', 'products.title', 'photos.photo_image' ,'photos.photo_url' ,'products.isNew' , 'products.min_price','products.max_price', 'products.isNegotiable', 'products.description', 'products.address')
             ->join('products', 'photos.id', '=', 'products.id')
             ->join('users', 'products.user_id', '=', 'users.id')
             ->where('products.id', '=', $id)->get();

@@ -18,7 +18,10 @@ Route::prefix('user')->group(function () {
 
         Route::get('/criar', [ProductController::class, 'create'])->name('user.add.product');
         Route::post('/criar/salva', [ProductController::class, 'store'])->name('user.store.product');
-
+        
+        Route::get('/editar/{id}', [ProductController::class, 'edit'])->name('user.edit.product');
+        Route::post('/editar/update/{id}', [ProductController::class, 'update'])->name('user.update.product');
+        
         Route::get('/detalhes/{id}', [UserController::class, 'detalhes'])->name('user.detalhes');
     });
 });

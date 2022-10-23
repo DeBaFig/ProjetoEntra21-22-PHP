@@ -20,8 +20,8 @@ return new class extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->string('phone')->nullable();
-            $table->string('address', 150)->nullable();
-            $table->string('cep')->nullable();
+            $table->string('user_address', 150)->nullable();
+            $table->string('user_cep')->nullable();
             $table->string('cpf')->nullable();
             $table->string('facebook')->nullable();
             $table->string('instagram')->nullable();

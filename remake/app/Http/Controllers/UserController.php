@@ -11,11 +11,7 @@ use Illuminate\Validation\Rules;
 
 class UserController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
     public function index()
     {
         $user = Auth::user();
@@ -28,11 +24,7 @@ class UserController extends Controller
         return view('user.index')->with("viewData", $viewData);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
     public function create()
     {
         $user = auth()->user();
@@ -48,23 +40,12 @@ class UserController extends Controller
         return view('user.product')->with("viewData", $viewData);
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\User  $user
-     * @return \Illuminate\Http\Response
-     */
+
     public function show(User $user)
     {
         //
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\User  $user
-     * @return \Illuminate\Http\Response
-     */
     public function editPassword()
     {
         $viewData = User::select('password')->where('email', '=', Auth::user()->email)->get();
@@ -89,28 +70,14 @@ class UserController extends Controller
 
 
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\User  $user
-     * @return \Illuminate\Http\Response
-     */
-
     public function edit()
     {
         $user_email = Auth::user()->email;
-        $viewData = User::select('name', 'email', 'password',  'whatsapp','twitter','phone', 'address', 'cep', 'cpf', 'facebook', 'instagram')->where('email', '=', $user_email)->get();
+        $viewData = User::select('name', 'email', 'password',  'whatsapp','twitter','phone', 'user_address', 'user_cep', 'cpf', 'facebook', 'instagram')->where('email', '=', $user_email)->get();
         return view('user.update')->with("viewData", $viewData);
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\User  $user
-     * @return \Illuminate\Http\Response
-     */
+
     public function update(Request $request)
     {
         if (Auth::guard('web')->attempt(['email' => $request['email'], 'password' => $request['password']])) {
@@ -118,8 +85,8 @@ class UserController extends Controller
             $user->name = $request->name;
             $user->cpf = $request->cpf;
             $user->phone = $request->phone;
-            $user->address = $request->address;
-            $user->cep = $request->cep;
+            $user->user_address = $request->user_address;
+            $user->user_cep = $request->user_cep;
             $user->facebook = $request->facebook;
             $user->instagram = $request->instagram;
             $user->whatsapp = $request->whatsapp;
@@ -134,7 +101,9 @@ class UserController extends Controller
     public function detalhes($id)
     {
         $viewData = Photo::select('*')
-            ->join('products', 'photos.id', '=', 'products.id')->where('products.id', '=', $id)->get();
+            ->join('products', 'photos.id', '=', 'products.id')
+            ->join('users', 'users.id', '=', 'products.user_id')
+            ->where('products.id', '=', $id)->get();
         return view('user.detalhes')->with("viewData", $viewData);
         
     }

@@ -35,7 +35,7 @@
                                     </div>
                                     @endif
                                     <div class="mx-2">
-                                        <a href="#" data-bs-toggle="tooltip" title="Editar">
+                                        <a href="editar/{{ $detalhes['product_id']}}" data-bs-toggle="tooltip" title="Editar">
                                             <img class="ml-2" src="{{ asset('assets/icon/pen-to-square-solid.svg') }}" style="width: 30px;">
                                         </a>
                                     </div>

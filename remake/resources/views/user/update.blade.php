@@ -32,12 +32,12 @@
                             <x-text-input id="phone" class="block mt-1 w-full" type="text" name="phone" value="{{ $detalhes['phone'] }}" />
                         </div>
                         <div>
-                            <x-input-label for="address" :value="__('Endereço')" />
-                            <x-text-input id="address" class="block mt-1 w-full" type="text" name="address" value="{{ $detalhes['address'] }}" />
+                            <x-input-label for="user_address" :value="__('Endereço')" />
+                            <x-text-input id="user_address" class="block mt-1 w-full" type="text" name="user_address" value="{{ $detalhes['user_address'] }}" />
                         </div>
                         <div>
-                            <x-input-label for="cep" :value="__('CEP')" />
-                            <x-text-input id="cep" class="block mt-1 w-full" type="text" name="cep" value="{{ $detalhes['cep'] }}" />
+                            <x-input-label for="user_cep" :value="__('CEP')" />
+                            <x-text-input id="user_cep" class="block mt-1 w-full" type="text" name="user_cep" value="{{ $detalhes['user_cep'] }}" />
                         </div>
                         <br> ADICIONE SUAS REDES SOCIAIS PARA O VENDEDOR TE ENCONTRAR:<br><br>
                         <div>

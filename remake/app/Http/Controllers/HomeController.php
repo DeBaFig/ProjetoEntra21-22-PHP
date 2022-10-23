@@ -3,14 +3,13 @@
 namespace App\Http\Controllers;
 
 use App\Models\Photo;
-use App\Models\User;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
     public function index()
     {
-        $viewData = Photo::select('products.id', 'products.title', 'photos.photo_image','photos.photo_url', 'products.isNew', 'products.max_price', 'products.isNegotiable')
+        $viewData = Photo::select('products.id', 'products.title', 'photos.photo_image','photos.photo_url', 'products.isNew', 'products.max_price' ,'products.min_price', 'products.isNegotiable')
             ->join('products', 'photos.id', '=', 'products.id')
             ->where('isActive', '=', 1)
             ->paginate(15);

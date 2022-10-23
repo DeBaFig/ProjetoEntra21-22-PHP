@@ -26,6 +26,7 @@ class Product extends Model
         'isNew',
         'isNegotiable',
         'isActive',
+        'status'
     ];
 
     /**
