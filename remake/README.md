@@ -57,16 +57,20 @@ O [Balcão Brasil]() foi idealizado para ter uma opção ainda mais ampla quando
 
 ### Implementadas  
 
+- [x] Login
+- [X] Logoff
+- [x] Página Acesso Administradores
+- [x] Página Acesso Usuário
+- [x] Cadastro
+- [x] Redefinição Senha
+- [x] Ver anúncios
+- [x] Criar/Editar/Excluir anúncio
+- [x] Completar cadastro usuário(rede sociais e etc)
+- [x] Links para contato
 
 ### Futuras  
 
-- [ ] Login
-- [ ] Logoff
-- [ ] Página Acesso Administradores
-- [ ] Página Acesso Usuário
-- [ ] Cadastro
-- [ ] Redefinição Senha
-- [ ] Painel para anúncio
+- [ ] Update de imagens(Dados persistentes)
 - [ ] Página para localizar anúcios
 - [ ] Comentários
 - [ ] Chat de negociação
@@ -105,23 +109,11 @@ O [Balcão Brasil]() foi idealizado para ter uma opção ainda mais ampla quando
 
 ## Colaboradores  
 
-[**Bruno**](https://github.com/brwnosouza)   
-<img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/104388708?v=4" width="100px;" alt=""/>
-[![Linkedin Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/brunodesouzabs)
-[![Gmail Badge](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:brunohyro@hotmail.com)
-[![Whatsapp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://whatsa.me/5547991610110)    
-
 [**Denize**](https://github.com/DeBaFig)  
 <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/46844031?v=4" width="100px;" alt=""/>
 [![Linkedin Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/dbfigueiredo/)
 [![Gmail Badge](	https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:denize.f.bassi@gmail.com)
 [![Whatsapp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://whatsa.me/5547988184372)  
-
-[**Icaro**](https://github.com/Icaromelchior)  
-<img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/13577500?v=4" width="100px;" alt=""/>
-<!-- [![Linkedin Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/) -->
-<!-- [![Gmail Badge](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:@gmail.com) -->
-[![Whatsapp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://whatsa.me/5547997723931)  
 
 [**Jennifer**](https://github.com/jennibarbosa)  
 <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/98884593?v=4" width="100px;" alt=""/>
@@ -129,8 +121,21 @@ O [Balcão Brasil]() foi idealizado para ter uma opção ainda mais ampla quando
 [![Gmail Badge](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:jennifer_lye@hotmail.com)
 [![Whatsapp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://whatsa.me/5547992595122)  
 
+
 [**Paula**](https://github.com/PaulaKinder)  
 <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/103958106?v=4" width="100px;" alt=""/>
 [![Linkedin Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/paula-eduarda-silva)
 [![Gmail Badge](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:paula.eduarda@unoesc.edu.br)
 [![Whatsapp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://whatsa.me/5549991323230)  
+
+[**Bruno**](https://github.com/brwnosouza)   
+<img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/104388708?v=4" width="100px;" alt=""/>
+[![Linkedin Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/brunodesouzabs)
+[![Gmail Badge](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:brunohyro@hotmail.com)
+[![Whatsapp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://whatsa.me/5547991610110)    
+
+[**Icaro**](https://github.com/Icaromelchior)  
+<img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/13577500?v=4" width="100px;" alt=""/>
+<!-- [![Linkedin Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/) -->
+<!-- [![Gmail Badge](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:@gmail.com) -->
+[![Whatsapp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://whatsa.me/5547997723931)  
