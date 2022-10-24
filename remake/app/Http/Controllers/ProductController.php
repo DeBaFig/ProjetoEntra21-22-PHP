@@ -24,7 +24,7 @@ class ProductController extends Controller
             'product_id' => $product->id,
             'photo_url' => $request->photo_url
         ]);
-        return redirect()->back();
+        return redirect()->route('user.product');
     }
 
 
@@ -56,10 +56,23 @@ class ProductController extends Controller
         return redirect()->route('user.detalhes' , ['id' => $id]);
     }
 
-    public function destroy(Product $product)
+    public function destroy($id)
     {
-
-
+        $product = Product::select('*')->where('id', $id)->first();
+        $product->status = 0;
+        $product->isActive = 0;
+        $product->save();
+        return redirect()->route('user.product');
+    }
+    public function activate($id)
+    {
+        Product::where('id', $id)->update(['isActive' => '1']);
+        return redirect()->route('user.product');
+    }
+    public function deactivate($id)
+    {
+        Product::where('id', $id)->update(['isActive' => '0']);
+        return redirect()->route('user.product');
     }
 
     public function detalhes($id)

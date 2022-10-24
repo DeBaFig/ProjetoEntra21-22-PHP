@@ -165,3 +165,6 @@ img{
         margin-bottom: 10px;
     }
 }
+.title-products-view{
+    font-size:40px;color:#4d7c0f;font-weight: bold; text-transform: uppercase;
+}

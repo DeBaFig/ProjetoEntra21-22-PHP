@@ -15,7 +15,7 @@ class UserController extends Controller
     public function index()
     {
         $user = Auth::user();
-        $query = Photo::select('products.title', 'product_id', 'products.user_id', 'photos.photo_image','photos.photo_url', 'products.isNew', 'products.max_price', 'products.isNegotiable')
+        $query = Photo::select('products.title', 'product_id', 'products.user_id', 'photos.photo_image', 'photos.photo_url', 'products.isNew', 'products.max_price', 'products.isNegotiable')
             ->join('products', 'photos.id', '=', 'products.id')
             ->where('isActive', '=', 1)
             ->where('user_id', '!=', $user->id)
@@ -28,22 +28,18 @@ class UserController extends Controller
     public function create()
     {
         $user = auth()->user();
-        $query = Photo::select('products.title','isActive', 'photos.photo_image','photos.photo_url', 'photos.product_id','products.isNew', 'products.max_price', 'products.isNegotiable')
+        $query = Photo::select('*')
             ->join('products', 'photos.id', '=', 'products.id')
-            ->where('isActive', '=', '1')
+            ->where('status', '=', '1')
             ->where('products.user_id', '=', $user->id)
             ->get();
+        $draftNumber = collect($query)->where('isActive','=','0')->count('isActive');
+        $activeNumber = collect($query)->where('isActive','=','1')->sum('isActive');
         $viewData = collect($query)->unique('product_id');
-        if ($query->count() == 0) {
-            return view('user.product')->with("error", 'Você ainda não tem nenhum anúncio, que tal comprar algo?')->with('viewData', $viewData);
-        }
-        return view('user.product')->with("viewData", $viewData);
-    }
-
-
-    public function show(User $user)
-    {
-        //
+        return view('user.product')
+        ->with("viewData", $viewData)
+        ->with("draftNumber", $draftNumber)
+        ->with("activeNumber", $activeNumber);
     }
 
     public function editPassword()
@@ -73,7 +69,7 @@ class UserController extends Controller
     public function edit()
     {
         $user_email = Auth::user()->email;
-        $viewData = User::select('name', 'email', 'password',  'whatsapp','twitter','phone', 'user_address', 'user_cep', 'cpf', 'facebook', 'instagram')->where('email', '=', $user_email)->get();
+        $viewData = User::select('name', 'email', 'password',  'whatsapp', 'twitter', 'phone', 'user_address', 'user_cep', 'cpf', 'facebook', 'instagram')->where('email', '=', $user_email)->get();
         return view('user.update')->with("viewData", $viewData);
     }
 
@@ -96,7 +92,6 @@ class UserController extends Controller
         } else {
             return redirect()->back()->with('error', 'Senha inválida');
         }
-        
     }
     public function detalhes($id)
     {
@@ -105,6 +100,5 @@ class UserController extends Controller
             ->join('users', 'users.id', '=', 'products.user_id')
             ->where('products.id', '=', $id)->get();
         return view('user.detalhes')->with("viewData", $viewData);
-        
     }
 }

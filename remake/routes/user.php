@@ -19,6 +19,9 @@ Route::prefix('user')->group(function () {
         Route::get('/criar', [ProductController::class, 'create'])->name('user.add.product');
         Route::post('/criar/salva', [ProductController::class, 'store'])->name('user.store.product');
         
+        Route::get('/ativar/{id}', [ProductController::class, 'activate']);
+        Route::get('/desativar/{id}', [ProductController::class, 'deactivate']);
+        Route::get('/excluir/{id}', [ProductController::class, 'destroy']);
         Route::get('/editar/{id}', [ProductController::class, 'edit'])->name('user.edit.product');
         Route::post('/editar/update/{id}', [ProductController::class, 'update'])->name('user.update.product');
         
