@@ -19,7 +19,7 @@
                                 <p class="">{{ $detalhes['title'] }}</p>
                             </div>
                             <div class="flex flex-row justify-between">
-                                <p class="pt-1 text-gray-900">Pago: R$ {{ $detalhes['max_price'] }}</p>
+                                <p class="pt-1 text-gray-900">Pago: R$ {{ $detalhes['min_price']??$detalhes['max_price'] }}</p>
                                 <div class="md:w-1/2  flex flex-row">
                                     @if($detalhes['isActive'] == 0)
                                     <div class="mx-2">
@@ -83,7 +83,7 @@
                                 <p class="">{{ $detalhes['title'] }}</p>
                             </div>
                             <div class="flex flex-row justify-between">
-                                <p class="pt-1 text-gray-900">Pago: R$ {{ $detalhes['max_price'] }}</p>
+                                <p class="pt-1 text-gray-900">Pago: R$ {{ $detalhes['min_price']??$detalhes['max_price'] }}</p>
                                 <div class="md:w-1/2  flex flex-row">
                                     @if($detalhes['isActive'] == 0)
                                     <div class="mx-2">

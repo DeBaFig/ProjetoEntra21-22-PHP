@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __( Auth::user()->name . 'Aqui você pode ver seu anúncio.'  ) }}
+            {{ __('Aqui é como seu vendedor vê seu anúncio.'  ) }}
         </h2>
     </x-slot>
     <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
