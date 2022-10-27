@@ -9,12 +9,21 @@
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 bg-white border-b border-gray-200">
                     <x-auth-validation-errors class="mb-4" :errors="$errors" />
+                    <div class="flex justify-center items-center my-6 space-x-3 ">
+                        <form method="POST" class="" action="#">
+                            @foreach($viewData as $key => $detalhes)
+                            <img class="mx-auto w-36 h-36" src="{{ asset($detalhes['avatar']) }}">
+                            @endforeach
+                            <x-primary-button class="w-full">
+                                {{ __('Editar') }}
+                            </x-primary-button>
+                        </form>
+                    </div>
                     <form method="POST" action="{{ route('user.update') }}">
                         @csrf
 
                         <!-- Name -->
                         @foreach($viewData as $key => $detalhes)
-                        <img class="w-36 h-36 rounded" src="{{ $detalhes['avatar'] }}" alt="Extra large avatar">
 
                         <div>
                             <x-input-label for="name" :value="__('Nome')" />

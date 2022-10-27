@@ -69,7 +69,7 @@ class UserController extends Controller
     public function edit()
     {
         $user_email = Auth::user()->email;
-        $viewData = User::select('name', 'email', 'password',  'whatsapp', 'twitter', 'phone', 'user_address', 'user_cep', 'cpf', 'facebook', 'instagram')->where('email', '=', $user_email)->get();
+        $viewData = User::select('name', 'email', 'password',  'whatsapp', 'twitter', 'phone', 'user_address', 'user_cep', 'cpf', 'facebook', 'instagram', 'avatar')->where('email', '=', $user_email)->get();
         return view('user.update')->with("viewData", $viewData);
     }
 
