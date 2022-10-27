@@ -14,6 +14,8 @@
 
                         <!-- Name -->
                         @foreach($viewData as $key => $detalhes)
+                        <img class="w-36 h-36 rounded" src="{{ $detalhes['avatar'] }}" alt="Extra large avatar">
+
                         <div>
                             <x-input-label for="name" :value="__('Nome')" />
                             <x-text-input id="name" class="block mt-1 w-full" type="text" name="name" value="{{ $detalhes['name'] }}" />
@@ -59,7 +61,7 @@
                         <br><br> Digite sua senha para confirmar as alterações:<br><br>
                         <div>
                             <x-input-label for="password" :value="__('Senha')" />
-                            <x-text-input id="password" class="block mt-1 w-full" type="password" name="password" required/>
+                            <x-text-input id="password" class="block mt-1 w-full" type="password" name="password" required />
                         </div>
                         @endforeach
                         <x-primary-button class="my-5">
@@ -69,6 +71,5 @@
                 </form>
             </div>
         </div>
-    </div>
     </div>
 </x-app-layout>
